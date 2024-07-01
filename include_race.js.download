@@ -1,0 +1,15 @@
+var rootdomain = "http://" + window.location.hostname
+$(document).ready(function () { 
+    var langVersion = document.location.href.indexOf("/ch/") > 0 ? 'ch' : 'en'; 
+    
+	
+    if ($(window).width() < 1024) {
+        $('<div />').load('/DataFileArchive/Homepage/horsemobilenav' + langVersion + '.html', function () { $("#s4-workspace").before($(this).html()); })
+    } else {
+        $('<div />').load('/DataFileArchive/Homepage/raceheader' + langVersion + '.html', function () { $("#wrapper").before($(this).html()); });
+		$('<div />').load('/DataFileArchive/Homepage/racefooter' + langVersion + '.html', function () { $("#wrapper").append($(this).html()); });
+		$('<div />').load('/DataFileArchive/Homepage/raceleftnav' + langVersion + '.html', function () { $("#raceleftnav").prepend($(this).html()); });
+    }
+    if (navigator.userAgent.toLowerCase().indexOf("android") > -1 && navigator.userAgent.toLowerCase().indexOf("chrome") == -1) { }
+});
+function select_left_nav(html_file) { try { var current_link = null; $('#submenu, #submenu-lottery, #submenu-htp, #submenu-corp').find('li').removeClass('current'); $('#submenu, #submenu-lottery, #submenu-htp, #submenu-corp').find('li a').each(function () { var strHref = $(this).attr('href'); if (strHref.toLowerCase().indexOf(html_file.toLowerCase()) > 0) { current_link = $(this); return false; } }); var hasActiveLink = false; if (current_link && current_link.length > 0) { current_link.parent('li').addClass('current'); hasActiveLink = true; } else { var urlArraySpecialCase = document.location.href.split('?')[0].split('/'); var htmlFileSpecialCase = urlArraySpecialCase[urlArraySpecialCase.length - 1].toLowerCase(); var QuotationPages = 'quotations.aspx|QuotationDetails.aspx|OnlineQuotationSubmission.aspx'.toLowerCase(); var TenderPages = 'corp_tendernotice.aspx|OnlineTenderQuotation.aspx|TenderNoticeDetails.aspx|'.toLowerCase(); if (QuotationPages.indexOf(htmlFileSpecialCase) > 0) { $('.QuotationsLink').addClass('current'); hasActiveLink = true; } else if (TenderPages.indexOf(htmlFileSpecialCase) > 0) { $('.TendersLink').addClass('current'); hasActiveLink = true; } else { $('#submenu, #submenu-lottery, #submenu-htp, #submenu-corp').find('li').each(function () { if ($(this).attr('id')) { var strID = $(this).attr('id').replace(/_/gi, '/'); if (document.location.href.toLowerCase().indexOf(strID.toLowerCase()) > 0) { $(this).addClass('current'); hasActiveLink = true; return false; } } }); } } if (!hasActiveLink) { current_link = $('#submenu, #submenu-lottery, #submenu-htp, #submenu-corp').find('li a:first'); current_link.parent('li').addClass('current'); } } catch (err) { } } function OpenDialog(sPageURL, width, height) { options = SP.UI.$create_DialogOptions(); options.width = width ? width : 520; options.height = height ? height : 500; options.url = sPageURL; options.dialogReturnValueCallback = Function.createDelegate(null, CloseCallback); SP.UI.ModalDialog.showModalDialog(options); } function CloseCallback(result, target) { location.reload(true); }

@@ -1,0 +1,54 @@
+/**
+ * Variable Overrides.
+ *
+ * Modify this file to override the Bootstrap Framework variables. You can copy
+ * these variables directly from ../bootstrap/less/variables.less to this file.
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?d1ev0r');
+  src: url('fonts/icomoon.eot?d1ev0r#iefix') format('embedded-opentype'), url('fonts/icomoon.woff?d1ev0r') format('woff'), url('fonts/icomoon.ttf?d1ev0r') format('truetype'), url('fonts/icomoon.svg?d1ev0r#icomoon') format('svg');
+}
+
+/* RG Banner */
+/*@media all and (min-width:767px)*/
+.timed-notice-warning-race {
+    text-align: center;
+}
+/*media all*/
+.timed-notice-warning-race {
+    background: #ffcd00;
+    padding: 6px 0px;
+    color: #474747;
+}
+/*media all*/
+.show {
+    display: block !important;
+}
+/*@media all and (min-width:1200px)*/
+.container {
+    width: 1156px;
+}
+/*media all*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/*media all*/
+.timed-notice-warning-race .timed-notice-warning-race__message.timed-notice-warning-race__message--reset {
+    width: 100%;
+    float: none;
+}
+/*@media all and (min-width:767px)*/
+.timed-notice-warning-race .timed-notice-warning-race__message {
+    display: inline;
+}
+/*media all*/
+.timed-notice-warning-race .timed-notice-warning-race__message {
+    text-align: center;
+}
+
+

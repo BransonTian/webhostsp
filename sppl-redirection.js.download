@@ -1,0 +1,307 @@
+
+	//$( document ).ready(function() {
+	//alert("test");
+			var LangVal  = '';
+            function getXMLHttpRequest() {
+		        if (window.XMLHttpRequest) {
+		            return new window.XMLHttpRequest;
+		        }
+		        else {
+		            try {
+		                return new ActiveXObject("MSXML2.XMLHTTP.3.0");
+		            }
+		            catch (ex) {
+		                return null;
+		            }
+		        }
+		    };
+		
+		    var old_url;
+		    var new_url;
+		    var xmlhttp = getXMLHttpRequest();
+		    var msg;
+		    var en_msg = 'Sorry. The page in requested language currently is not available.';
+		    var ch_msg = 'Sorry. The page in requested language currently is not available.';
+		
+		    function handler() {
+			    try		   
+			    {
+			    //alert(xmlhttp.readyState);
+		        if (xmlhttp.readyState == 4) {		            		
+		            if (xmlhttp.status == 404) { 
+		            	//alert(en_msg); 
+		            	if(old_url.indexOf("/ch/") > -1)
+		            	{
+		            		 setCookie("SGPoolLang", 'en');
+		            	}
+		            	else
+		            	{
+		            		setCookie("SGPoolLang", 'ch');
+
+		            	}
+		            	window.location = old_url; 
+		            }
+		            else { 
+		            	if(new_url.indexOf("/ch/") > -1)
+		            	{
+		            		 setCookie("SGPoolLang", 'ch');
+		            	}
+		            	else
+		            	{
+		            		setCookie("SGPoolLang", 'en');
+
+		            	}
+
+		            window.location = new_url; }
+		        }
+		        else { //alert(new_url);
+		        //alert(xmlhttp.readyState +'-- Ravi');
+						window.location = new_url; 
+						}
+				}
+				catch(err)
+				{
+					//alert(msg); 
+				}
+		
+		    }
+			 var userLang = navigator.language || navigator.userLanguage;
+			 
+			//alert(userLang);
+			//alert("6000= " + document.location.href.indexOf("6000"));
+			//alert("en= " + document.location.href.toLowerCase().indexOf("/en/pages/index.html"));
+			//alert("ch= " + document.location.href.toLowerCase().indexOf("/ch/pages/index.html"));
+			
+			 if(document.location.href.indexOf("6000") == -1)
+		      {		    
+		      	if(document.location.href.toLowerCase().indexOf("/en/pages/index.html") > -1 || document.location.href.toLowerCase().indexOf("/ch/pages/index.html") > -1)
+		      	{  		
+			     	checkCookie();	
+			    }	      
+		      }
+			 
+			 function setCookie(cname, cvalue) {				 		
+			 	var domain  = window.location.hostname;    
+			    //document.cookie = cname + "=" + cvalue;
+			    //alert(cname+"="+cvalue+'; domain='+window.location.hostname+'');
+			    var exdate=new Date(); exdate.setDate(exdate.getDate() + 365);
+			    document.cookie=  cname + "=" +( cvalue ) +"; expires=" + exdate.toUTCString() + "; path=/; domain="+domain;
+			    //document.cookie = cname + "=" +escape( cvalue ) +"; path=/"; ) +
+				//( ( domain ) ? "domain=" + domain "" );
+			    //document.cookie = cname+"="+cvalue+'; domain='+window.location.hostname+''; 
+			}
+			
+			function getCookie(cname) {
+			    var name = cname + "=";
+			    var ca = document.cookie.split(';');
+			    for(var i=0; i<ca.length; i++) {
+			        var c = ca[i];
+			        while (c.charAt(0)==' ') c = c.substring(1);
+			        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+			    }
+			    return "";
+			}
+			
+			function checkCookie() {
+			    var SGPoolLang = getCookie("SGPoolLang");				    		    
+			    if (SGPoolLang.length == 0) {
+			    	//alert(SGPoolLang +'Not Exits');
+			         setCookie("SGPoolLang", userLang);
+			         switch_page(userLang);
+			    } else {	
+			    	//alert(SGPoolLang +'Exits');		        
+			        switch_page(SGPoolLang);
+			    }
+			}		
+			
+			function switch_page(Lang) {
+			//alert("test SP");
+			//alert(Lang +'==='+  document.location.href.indexOf("/ch/") +'----'+ document.location.href.indexOf("6000"));
+			LangVal  = Lang			
+			if(Lang == 1 && document.location.href.indexOf("/ch/") > -1 && document.location.href.indexOf("6000") == -1)
+			{				
+				//alert('2');
+		        old_url = document.location.href.replace('#','');
+		        //	old_url = 'http://localhost:8080/en/corporate/index.html';
+		        new_url = old_url;
+		
+				//alert('3');
+		        if (old_url.indexOf("/ch/") < 0) {
+		            new_url = old_url.replace("/en/", "/ch/");
+		            msg = en_msg;
+		            //alert('ch');
+		            if(document.location.href.toLowerCase().indexOf("/en/pages/index.html") > -1 || document.location.href.toLowerCase().indexOf("/ch/pages/index.html") > -1)
+		      		{
+		            	setCookie("SGPoolLang", 'ch');
+		            }
+		        }
+		        else if (old_url.indexOf("/en/") < 0) {
+		            new_url = old_url.replace("/ch/", "/en/");
+		            msg = msg;
+		            //alert('en');	
+		            if(document.location.href.toLowerCase().indexOf("/en/pages/index.html") > -1 || document.location.href.toLowerCase().indexOf("/ch/pages/index.html") > -1)
+		      		{	            
+			            setCookie("SGPoolLang", 'en');
+		            }
+		        }
+				
+		        //alert('in check - old url : '+old_url);
+		         //alert('in check - new url : '+new_url);
+		
+		        xmlhttp.onreadystatechange = handler;
+		        xmlhttp.open('HEAD', new_url, true);
+		        xmlhttp.send(null);
+			}
+			else if(Lang == 2 && document.location.href.indexOf("/en/") > -1 && document.location.href.indexOf("6000") == -1)
+			{				
+				//alert(Lang);
+		        old_url = document.location.href.replace('#','');
+		        //	old_url = 'http://localhost:8080/en/corporate/index.html';
+		        new_url = old_url;
+				//alert(old_url);
+		
+		        if (old_url.indexOf("/ch/") < 0) {
+		            new_url = old_url.replace("/en/", "/ch/");
+		            msg = en_msg;
+		            //alert('ch');
+		            setCookie("SGPoolLang", 'ch');
+		        }
+		        else if (old_url.indexOf("/en/") < 0) {
+		            new_url = old_url.replace("/ch/", "/en/");
+		            msg = msg;
+		            //alert('en');		            
+		            setCookie("SGPoolLang", 'en');
+		        }
+		
+		         //alert('in check - old url : '+old_url);
+		         //alert('in check - new url : '+new_url);
+			
+		       if (new_url.indexOf("ViewRaceResult")>-1 || new_url.indexOf("viewraceresult")>-1 
+				|| new_url.indexOf("RaceResultAndDividends")>-1 || new_url.indexOf("raceresultanddividends")>-1 
+				|| new_url.indexOf("RaceCards")>-1 || new_url.indexOf("raceCards")>-1
+				|| new_url.indexOf("ViewRaceCard")>-1 || new_url.indexOf("viewracecard")>-1
+				|| new_url.indexOf("MoreRaceResult")>-1 || new_url.indexOf("MoreRaceResult")>-1
+				|| new_url.indexOf("OtherResult")>-1 || new_url.indexOf("OtherResult")>-1) {
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+				else{
+					//alert("The page you are trying to reach is not available.");
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+			}
+			else if(Lang != 1 && Lang != 2 && document.location.href.indexOf("6000") == -1)
+			{
+		        var blnStatus = false;		       
+		        old_url = document.location.href.replace('#','');
+		        new_url = old_url;
+		        //ert(Lang +'--='+ Lang.indexOf("ch") +'--='+ old_url.indexOf("/en/"));
+		        //ert(Lang +'--='+ Lang.indexOf("en") +'--='+ old_url.indexOf("/ch/"));
+		        //alert(Lang.toLowerCase().indexOf("ch") +'--- '+ Lang);
+				if(Lang.toLowerCase().indexOf("ch") > -1 || Lang.toLowerCase().indexOf("zh") > -1 || Lang.toLowerCase().indexOf("zh-cn") > -1 || Lang.toLowerCase().indexOf("zh-sg") > -1 || Lang.toLowerCase().indexOf("zh-Hans") > -1)
+				{
+					Lang = 'ch';
+				}
+				else{
+					Lang = 'en';
+				}
+				//alert(Lang +'--'+ old_url);
+		        if (Lang.indexOf("ch") > -1 && old_url.indexOf("/en/") > -1) {
+		            new_url = old_url.replace("/en/", "/ch/");
+		            msg = en_msg;
+		            blnStatus = true;
+		        }
+		        else if (Lang.indexOf("en") > -1 && old_url.indexOf("/ch/") > -1) {
+		            new_url = old_url.replace("/ch/", "/en/");
+		            msg = msg;
+     	            blnStatus = true;
+		        }
+				//alert(blnStatus +'--'+ new_url);
+		         //alert('in check - old url : '+old_url);
+		         //alert('in check - new url : '+new_url);
+				if(blnStatus)
+				{
+			        if (new_url.indexOf("ViewRaceResult")>-1 || new_url.indexOf("viewraceresult")>-1 
+				|| new_url.indexOf("RaceResultAndDividends")>-1 || new_url.indexOf("raceresultanddividends")>-1 
+				|| new_url.indexOf("RaceCards")>-1 || new_url.indexOf("raceCards")>-1
+				|| new_url.indexOf("ViewRaceCard")>-1 || new_url.indexOf("viewracecard")>-1
+				|| new_url.indexOf("MoreRaceResult")>-1 || new_url.indexOf("MoreRaceResult")>-1
+				|| new_url.indexOf("OtherResult")>-1 || new_url.indexOf("OtherResult")>-1) {
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+				else{
+					//alert("The page you are trying to reach is not available.");
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+		        }
+		      }
+		       else if(document.location.href.indexOf("6000") > -1)
+		      {
+		      	old_url = document.location.href.replace('#','');
+		        //	old_url = 'http://localhost:8080/en/corporate/index.html';
+		        new_url = old_url;
+		      	//alert(Lang);
+		      	if(Lang == 1)
+		      	{
+		      		if (old_url.indexOf("/en/") < 0) {
+			            new_url = old_url.replace("/ch/", "/en/");
+			            msg = msg;
+			            //alert('en');		            
+			            setCookie("SGPoolLang", 'en');
+			        }			       
+		      	}
+		      	else if(Lang == 2){
+		      		
+					if (old_url.indexOf("/ch/") < 0) {
+			            new_url = old_url.replace("/en/", "/ch/");
+			            msg = en_msg;
+			            //alert('ch');
+			           setCookie("SGPoolLang", 'ch');
+			        }
+
+		      	}
+		        
+		
+		        //alert('in check - old url : '+old_url);
+		        // alert('in check - new url : '+new_url);
+				try{
+		        if (new_url.indexOf("ViewRaceResult")>-1 || new_url.indexOf("viewraceresult")>-1 
+				|| new_url.indexOf("RaceResultAndDividends")>-1 || new_url.indexOf("raceresultanddividends")>-1 
+				|| new_url.indexOf("RaceCards")>-1 || new_url.indexOf("raceCards")>-1
+				|| new_url.indexOf("ViewRaceCard")>-1 || new_url.indexOf("viewracecard")>-1
+				|| new_url.indexOf("MoreRaceResult")>-1 || new_url.indexOf("MoreRaceResult")>-1
+				|| new_url.indexOf("OtherResult")>-1 || new_url.indexOf("OtherResult")>-1) {
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+				else{
+					//alert("The page you are trying to reach is not available.");
+					xmlhttp.onreadystatechange = handler;
+					xmlhttp.open('HEAD', new_url, true);
+					xmlhttp.send(null);
+				}
+		        }
+		        catch(err)
+		        {
+		        	//alert('ravi -- '+ err);
+		        }
+		      }
+		      //else if(document.location.href.indexOf("/outlets/") > -1 || document.location.href.indexOf("/subscribe/") > -1)
+		      //{
+			      //if(Lang == 2)
+			      //{
+		      	 //var en_msg = 'Sorry. The page in requested language currently is not available.';
+    			 //alert(en_msg);
+    			 //}
+		      //}
+		    } 
+
+//});        	 

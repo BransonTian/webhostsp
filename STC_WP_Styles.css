@@ -1,0 +1,5661 @@
+﻿/*************************************************
+* Unified Stylesheet V1.0
+
+* Created By:   Mike
+* Created Date: 15-02-2012
+* Updated By:   
+* Updated Date:
+**************************************************/
+/* aleart banner */
+/*media all*/
+.banner-alert-message-race{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background: #fff7dd;
+    color: #d0893c;
+    border: #d0893c 2px solid;
+    padding: 15px;
+    border-radius: 4px;
+}
+/*media all*/
+.views-field-race{
+    color: #d0893c;
+}
+/*media all*/
+.close-race{
+    color: #d0893c;
+    font-size: 24px;
+    opacity: 1;
+    line-height: 0.7;
+    font-weight: normal;
+    float: right;
+    filter: alpha(opacity=20);
+    text-shadow: 0px 1px 0px #fff;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+}
+/*media all*/
+.banner-announcement-message-race{
+
+}
+/*media all*/
+.announcement-message-content-race{
+
+}
+
+.STC_borderframe
+{
+    border: 1px #bababa solid;
+    border-collapse: collapse; 
+    background-color: white;
+}
+.STC_Active_Tab
+{
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x !important;
+	cursor: default !important;
+}
+.STC_Tab_Button
+{
+	height: 29px;
+	border: 0;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+    cursor: pointer;
+	min-width: 30px;
+	outline: 0;
+    color: #000000;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#divTabLinkContainer
+{
+	width: 100%;
+	height: 29px;
+    background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+}
+.STC_TabData .ajax__tab_header
+{
+    height: 29px;
+    color: #000000;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+}
+.STC_TabData .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+
+a { outline: 0; }
+HR { height: 0; }
+.STC_Raquo
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #10abb0;
+	/*display: inline;*/
+	
+}
+.STC_lineSpacer { height: 5px; width: 5px; }
+.STC_PageTitle
+{
+    font-family: Arial, helvatica, Sans-Serif;
+    font-size: 24px;
+    color: #07467B;
+    font-weight: bold;
+}
+/*.STC_WP_BG
+{
+    border: 1px solid #bababa;
+ 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); 
+	background: -moz-linear-gradient(top,  #FFF,  #E8E8E8);   
+}
+*/
+.STC_WP_BG
+{
+    border: 0;
+	background:transparent;
+ 	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+	/*//background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); 
+	background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */    
+}
+.STC_Cell_Padding
+{
+    padding: 0 10px;   
+}
+.STC_Cell_Padding_Top
+{
+    padding: 10px 10px 0 10px;   
+}
+.STC_Cell_Padding_Bottom
+{
+    padding: 0 10px 10px 10px;   
+}
+.STC_DisplayNone
+{
+    display: none;
+}
+/*** wp_UpcomingEvents *****************************/
+.wp_UpcomingEvents
+{
+	width: 322px;
+	height: 342px;
+	padding: 0; 
+	margin: 0;
+	border: 0;
+}
+.STC_GenericContenHeaderFront_UpcomingEvents{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRear_UpcomingEvents {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: right;}
+.STC_GenericContenHeaderRepeat_UpcomingEvents{height: 30px;width: 318px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x; float: left; }
+.wp_UpcomingEvents .STC_UpComingIcon
+{
+    width: 38px;
+    height: 30px;
+	float: left;	
+    background: url(/_layouts/images/EventCalendarWebParts/CalendarIcon.png) no-repeat;
+}
+.wp_UpcomingEvents .STC_UpcomingHeaderText
+{
+    width: 280px;
+    font-weight: bold;
+    text-transform: uppercase; 
+	text-align: left;
+	margin: 0;
+	padding: 8px 0 0 0;
+}
+.wp_UpcomingEvents .header
+{
+	width: 322px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.wp_UpcomingEvents .body
+{
+	width: 322px;
+	height: 312px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+}
+.wp_UpcomingEvents td.body
+{
+	width: 322px;
+	height: 272px;
+}
+.wp_UpcomingEvents .footer
+{
+	height: 35px;
+	width: 320px;
+	text-align: right;
+	padding-right: 10px;
+	border-bottom: 1px solid #c2c2c2;
+/*	background: url(/_layouts/images/EventCalendarWebParts/CalendarFooter2.png)*/;
+}
+.wp_UpcomingEvents .STC_TabUpcomingRace_EventItem
+{
+	height: 64px;
+	width: 100px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+}
+/*** wp_UpcomingEvents *****************************/
+/*** wp_TrainingFacilities *****************************/
+.wp_TrainingFacilities
+{
+	width: 322px;
+	height: 416px;
+	padding: 0; 
+	margin: 0;
+}
+.STC_GenericContenHeaderFront_TrainingFacilities {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRear_TrainingFacilities {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: right;}
+.STC_GenericContenHeaderRepeat_TrainingFacilities {height: 30px;width: 318px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x; float: left; }
+.STC_Icon_TrainingFacilities
+{
+    width: 38px;
+    height: 30px;
+	float: left;
+    background: url(/_layouts/images/trainingfacilitiesicon.png) top left no-repeat;
+	padding: 0;
+	margin: 0;
+}
+.STC_TrainingFacilitiesHeaderText
+{
+    width: 280px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: left;
+	position: relative;
+	padding: 8px 0 0 0;
+	margin: 0;
+}
+.wp_TrainingFacilities .header
+{
+	width: 322px;
+	height: 30px;
+	padding:0;
+}
+.wp_TrainingFacilities .body
+{
+	height: 187px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	padding: 13px 19px 13px 19px;
+	vertical-align: text-top;
+}
+.wp_TrainingFacilities .desc
+{
+	height: 121px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+        text-align: center;
+        vertical-align: top;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+.wp_TrainingFacilities .footer
+{
+	height: 34px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+}
+.wp_TrainingFacilities .body .virtualImage
+{
+	width: 280px;
+	height: 164px;
+	border: 1px solid #c2c2c2;
+}
+/*** wp_TrainingFacilities END *************************/
+/*** wp_IndustryPageBanner ***********************/
+.wp_IndustryPageBanner
+{
+	width: 640px;
+	height: 416px;
+	border: 1px solid #c2c2c2;
+	padding: 0;
+	margin: 0;
+}
+.wp_IndustryPageBanner td
+{
+	padding: 0;
+}
+.wp_IndustryPageBanner .imageContainer
+{
+	width: 640px;
+	height: 390px;
+}
+.wp_IndustryPageBanner .imageContainer .overlay2
+{
+	width: 310px;
+	height: 290px;
+    background-color: #ffffff;
+    filter: alpha(opacity=90);
+    opacity:0.9; 
+	position: relative;
+	top: -338px;
+	left: 318px;
+}
+.wp_IndustryPageBanner .imageContainer .overlay
+{
+	width: 280px;
+	height: 290px;
+    background-color: transparent;
+	position: relative;
+	top: -628px;
+	left: 318px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.wp_IndustryPageBanner .imageContainer .overlay .title
+{
+	padding-top: 20px;
+	font-family: Arial Black, Arial;
+	color: #10abb0;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.wp_IndustryPageBanner .imageContainer .overlay  .description
+{
+	font-family: Arial;
+	font-size: 11px;
+	padding-top: 15px;
+	height: 150px;
+	vertical-align: text-top;
+}
+.wp_IndustryPageBanner .footer
+{
+	width: 630px;
+	height: 24px;
+	padding-right: 10px;
+	text-align: right;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+	background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#E8E8E8)); 
+	background: -moz-linear-gradient(left,  #FFF,  #E8E8E8); /* for firefox 3.6+ */ 
+}
+
+.ManageBanner{height: 30px !important; padding-left: 5px !important; border-width: 1px !important;}
+/*** wp_IndustryPageBanner END *******************/
+/*** wp_RacingNews *******************************/
+.wp_RacingNews .STC_NewsIcon
+{
+	width: 100px;
+	height: 30px;
+	background: url(/_layouts/images/STCHomePageBanners/NewsIcon.png) top left no-repeat;
+	position:relative;
+	z-index: 2;
+}
+.wp_RacingNews .STC_TabNewsRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: relative;
+	top: -30px;
+	left: 300px;
+	z-index: 2;
+}
+.wp_RacingNews .STC_TabNews .ajax__tab_body 
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 300px;
+	height: 385px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+	/*overflow: hidden;*/
+} 
+.wp_RacingNews .STC_TabNews .ajax__tab_header 
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 116px;
+}
+.wp_RacingNews .STC_TabNews .ajax__tab_outer
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.wp_RacingNews .STC_TabNews .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.wp_RacingNews .STC_TabNews .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_RacingNews 
+{ 
+	width: 302px; 
+	height: 385px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wp_RacingNews .STC_TabNews_NewsItemTable
+{
+	width: 300px;
+    top: -14px;
+	height: 114px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+    position: relative;
+}
+.STC_TabNews_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCellContainer
+{
+	width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+	overflow: hidden;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .itemTextContainer
+{
+	height: 45px;
+	padding: 0;
+	margin: 0;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top;
+	overflow: hidden;
+}
+.wp_RacingNews  .STC_TabNews_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.wp_RacingNews  .STC_TabNews .readmore
+{
+	width: 290px;
+	height: 29px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+    background: url(/_layouts/images/EventCalendarWebParts/CalendarFooter2.png) no-repeat;
+}
+/*** wp_RacingNews *******************************/
+/*** wp_VirtualTour *****************************/
+.wp_VirtualTour
+{
+	width: 322px;
+	height: 262px;
+	padding: 0;
+	margin: 0;
+}
+.STC_GenericContenHeaderFront_VirtualTour {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRear_VirtualTour {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: right;}
+.STC_GenericContenHeaderRepeat_VirtualTour {height: 30px;width: 318px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x; float: left; }
+.STC_Icon_VirtualTour
+{
+    width: 38px;
+    height: 30px;
+	float: left;
+    background: url(/_layouts/images/virtualtouricon.gif) top left no-repeat;
+	padding: 0;
+	margin: 0;
+}
+.STC_VirtualTourHeaderText
+{
+    width: 280px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: left;
+	position: relative;
+	padding: 8px 0 0 0;
+	margin: 0;
+}
+.wp_VirtualTour .header
+{
+	width: 322px;
+	height: 30px;
+	padding:0;
+}
+.wp_VirtualTour .body
+{
+	width: 276px;
+	height: 166px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	padding: 13px 19px 13px 19px;  
+}
+.wp_VirtualTour .body .virtualImage
+{
+	width: 280px; 
+	height: 164px;
+	border: 1px solid #c2c2c2;
+}
+.wp_VirtualTour .footer
+{
+	width: 320px;
+	height: 39px;
+	text-align: center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+	background: url(/_layouts/images/virtualtourfooter.gif) center center no-repeat;
+}
+/*** wp_VirtualTour END *************************/
+
+/*** wp_UpcomingRaceEvents *****************************/
+.STC_UpcomingNews_ItemTable {
+    position: relative;
+    top:-13px;
+}
+.wp_UpcomingRaceEvents
+{
+	width: 322px;
+	height: 262px;
+}
+.STC_UpComingTab #divArrowUpcomingSingapore img
+{
+	position:relative;
+	top: -5px;
+	left: 203px;
+	z-index: 2;
+}
+.STC_UpComingTab #divArrowUpcomingOverseas img
+{
+	position:relative;
+	top: -5px;
+	left: 276px;
+	z-index: 2;
+}
+.STC_UpComingTab 
+{
+	position: relative;
+	margin-top: -30px;
+}
+.STC_UpcomingRaceIcon
+{
+	width: 176px;
+	height: 30px;
+	background: url(/_layouts/images/UpcomingWebParts/TabUpcomingRaceIcon.png) no-repeat; 
+	position: relative;
+	z-index: 2;
+}
+.STC_TabUpcomingRaceRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: relative;
+	z-index: 2;
+	margin-top: -30px;
+	left: 320px;
+}
+.STC_UpComingTab .ajax__tab_body
+{
+    background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 320px;
+	height: 231px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+}
+.STC_UpComingTab .ajax__tab_header
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 176px;
+}
+.STC_UpComingTab .ajax__tab_tab
+{
+	width: 72px;
+	height: 30px;
+}
+.STC_UpComingTab .ajax__tab_outer
+{
+	width: 72px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_UpComingTab .ajax__tab_inner
+{
+	width: 72px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_UpComingTab .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+}
+.wp_UpcomingRaceEvents .STC_TabUpcomingRace_EventItem
+{
+	width: 100px;	
+	height: 64px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+	top: -13px;
+}
+.STC_UpComingDate
+{
+    width: 115px;
+	height: 64px;
+	background: url(/_layouts/images/UpComingWebParts/UpComingDateBox.png) center center no-repeat;
+	position: relative;
+	top: -13px; 
+}
+.STC_UpComingDate .eventdate
+{
+	text-align: center;
+	width: 115px;
+	height: 44px;	
+}
+.STC_UpComingDate .eventdate .day
+{
+    color: #515151;
+    font-size: 9px;
+    font-family: Arial Narrow;
+    text-transform: uppercase;
+    position: relative;
+	top: 7px;
+}
+.STC_UpComingDate .eventdate .date
+{
+    color: #515151;
+    font-size: 24px;
+    font-family: Arial Black, Arial;
+    position: relative;
+	top: -1px;
+	font-weight: 900;
+}
+.STC_UpComingDate .eventdate .month
+{
+    color: #515151;
+    font-size: 9px;
+    font-family: Arial Black, Arial;
+    position: relative;
+	top: -8px;
+	font-weight: 900;
+}
+.STC_UpComingData
+{
+    width: 205px;
+	height: 64px;
+	position:relative;
+	top: -13px;
+}
+.STC_UpComingData .title a, .STC_UpComingData .title a:hover
+{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+}
+.STC_UpComingData .title
+{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+}
+.STC_UpComingData .text
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #6e6e6e;
+}
+.STC_UpComingFullSchedule
+{
+	width: 310px;
+	height: 29px;
+	text-align: right;
+	padding-right: 10px;
+	overflow: hidden;
+	padding-top: 5px;
+	position: relative;
+	top: -13px;
+}
+.STC_UpComingEventDate
+{
+    width: 85px;
+	height: 64px;
+	background: url(/_layouts/images/UpComingWebParts/UpComingDateBox.png) center center no-repeat;
+	/*position: relative;
+	top: -13px; */
+}
+.STC_UpComingEventDate .eventdate
+{
+	text-align: center;
+	width: 85px;
+	height: 44px;	
+}
+.STC_UpComingEventDate .eventdate .day
+{
+    color: #515151;
+    font-size: 9px;
+    font-family: Arial Narrow, Arial;
+    text-transform: uppercase;
+    position: relative;
+	top: 7px;
+}
+.STC_UpComingEventDate .eventdate .date
+{
+    color: #515151;
+    font-size: 24px;
+    font-family: Arial Black, Arial;
+    position: relative;
+	top: -1px;
+	font-weight: 900;
+}
+.STC_UpComingEventDate .eventdate .month
+{
+    color: #515151;
+    font-size: 9px;
+    font-family: Arial Black, Arial;
+	font-weight: 900;
+    position: relative;
+	top: -8px;
+}
+.STC_UpComingEventData
+{
+    width: 235px;
+	height: 68px;
+	/*position:relative;
+	top: -13px;*/
+}
+.STC_UpComingEventData .title a, .STC_UpComingEventData .title a:hover
+{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+}
+.STC_UpComingEventData .title 
+{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+}
+.STC_UpComingEventData .text
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #6e6e6e;
+}
+/*** wp_UpcomingRaceEvents END *************************/
+
+/*** wp_HomeUpcomingNews *******************************/
+.wp_homeUpcomingNews .STC_NewsIcon
+{
+	width: 116px;
+	height: 30px;
+	background: url(/_layouts/images/STCHomePageBanners/NewsIcon.png) no-repeat;
+	position:relative;
+	z-index: 2;
+}
+.wp_homeUpcomingNews .STC_TabNewsRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: relative;
+	top: -30px;
+	left: 300px;
+	z-index: 2;
+}
+.STC_TabNews 
+{
+	position: relative;
+	top: -60px;
+}
+.STC_TabNews #divArrowNewsSingapore img
+{
+	position:relative;
+	top: -5px;
+	left: 152px;
+	z-index: 2;
+}
+.STC_TabNews #divArrowNewsOverseas img
+{
+	position:relative; 
+	top: -5px;
+	left: 247px;
+	z-index: 2;
+}
+.STC_TabNews .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 300px;
+	height: 501px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+} 
+.STC_TabNews .ajax__tab_header 
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 116px;
+}
+.STC_TabNews .ajax__tab_tab
+{
+	width: 92px;  
+	height: 30px;
+}
+.STC_TabNews .ajax__tab_outer
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_TabNews .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_TabNews .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_homeUpcomingNews 
+{ 
+	width: 302px; 
+	height: 532px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wp_homeUpcomingNews  .STC_TabNews_NewsItemTable
+{
+	width: 300px;
+	height: 116px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+	top: -13px;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCellContainer
+{
+	width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+	overflow: hidden;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top; 
+	overflow: hidden;
+}
+.wp_homeUpcomingNews .STC_TabNews_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.wp_homeUpcomingNews  .STC_TabNews .readmore
+{
+	width: 290px;
+	height: 26px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+    background: url(/_layouts/images/EventCalendarWebParts/CalendarFooter2.png) no-repeat;
+	position: relative;
+	top: -13px;
+}
+/*** wp_HomeUpcomingNews *******************************/
+/*** JQuery Tab ********************************/
+.newsandresult .ui-tabs-nav {
+    margin: 0 !important;
+    padding: 0 !important;    
+}
+.newsandresult .ui-tabs-nav li { 
+  list-style: none;
+  margin: 0 1px 0 0 !important;
+  padding: 0 !important;
+  float: left;
+}
+.newsandresult .ui-tabs-nav a {
+  position: relative;
+  top: 1px;
+  display: block;
+  border: solid #e1e0dc;
+  text-decoration: none;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  width: 110px;
+  height: 20px;
+  text-align: center;
+  padding-top: 8px;
+  border: 0;
+  background: url(/_layouts/images/wpTab/TabInactiveBg.png);
+}
+.newsandresult .ui-tabs-nav li.ui-tabs-selected a {
+  color: #000000;
+  background: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 111px;
+  height: 21px;
+  background: url(/_layouts/images/wpTab/TabActiveBg.png);
+}
+.newsandresult .ui-tabs-panel {
+  clear: both;
+  width: 960px;
+  height: 416px;
+  padding: 20px 0 20px 20px !important;
+  background: #fff;
+  border: 1px solid #b5b5b5;
+}
+.newsandresult .ui-tabs-hide {
+  display: none;
+}
+
+.newsandresult .STC_WpTabDiv {
+  float: left;
+  width: 302px;
+  height: 416px;
+  margin-right: 18px !important;
+  overflow: hidden;
+}
+
+.mediaBanner .ui-tabs-nav {
+    margin: 0 !important;
+    padding: 0 !important;    
+}
+.mediaBanner .ui-tabs-nav li { 
+  list-style: none;
+  margin: 0 1px 0 0 !important;
+  padding: 0 !important;
+  float: left;
+}
+.mediaBanner .ui-tabs-nav a {
+  position: relative;
+  top: 1px;
+  display: block;
+  border: solid #e1e0dc;
+  text-decoration: none;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  width: 110px;
+  height: 20px;
+  text-align: center;
+  padding-top: 8px;
+  border: 0;
+  background: url(/_layouts/images/wpTab/TabInactiveBg.png);
+}
+.mediaBanner .ui-tabs-nav li.ui-tabs-selected a {
+  color: #000000;
+  background: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 111px;
+  height: 21px;
+  background: url(/_layouts/images/wpTab/TabActiveBg.png);
+}
+.mediaBanner .ui-tabs-panel {
+  clear: both;
+  width: 655px;
+  height: 416px;
+  padding: 8px 0 7px 25px;
+  background: #fff;
+  border: 1px solid #b5b5b5;
+}
+.mediaBanner .ui-tabs-hide {
+  display: none;
+}
+
+.mediaBanner .STC_WpTabDiv {
+  float: left;
+  width: 302px;
+  height: 416px;
+  margin-right: 25px;
+  overflow: hidden;
+}
+/*** JQuery Tab ********************************/
+
+/*** JQuery Checkbox ***************************/
+.jquery-safari-checkbox
+{
+    display: inline;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.jquery-safari-checkbox .mark
+{
+    display: inline;
+   
+}
+
+.jquery-safari-checkbox img
+{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+.jquery-safari-checkbox img
+{
+    background: transparent url(/_layouts/images/safari-checkbox.png) no-repeat;
+}
+
+.jquery-safari-checkbox img
+{
+    background-position: 0px 0px;
+}
+.jquery-safari-checkbox-hover img
+{
+    background-position: -16px 0px;
+}
+.jquery-safari-checkbox-checked img
+{
+    background-position: 0px -16px;
+}
+.jquery-safari-checkbox-checked .jquery-safari-checkbox-hover img
+{
+    background-position: -16px -16px;
+}
+
+.jquery-safari-checkbox-disabled img
+{
+    background-position: 0px -32px;
+}
+.jquery-safari-checkbox-checked .jquery-safari-checkbox-disabled img
+{
+    background-position: 0px -48px;
+}
+/*** JQuery Checkbox END ***********************/
+
+/*** Gradient ************************************/
+.STC_Gradient
+{
+	/*background: #E8E8E8; for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */ 
+}
+/*** Gradient END ********************************/
+
+/*** Padding *************************************/
+.STC_Padding
+{
+    padding: 10px;
+}
+/*** Padding END *********************************/
+
+/*** Main Layout Table ***************************/
+.STC_Table_Main
+{
+    width: 745px !important;
+    background-color: transparent;
+	white-space: normal;
+	margin: 0;
+	padding: 0;
+}
+.STC_Table_Main_Row
+{
+    text-align: left;
+}
+.STC_Table_Main_Cell
+{
+    font-family: Arial;
+}
+.STC_Table_Main_Row_Alternate
+{
+}
+.STC_Table_Main_Cell_Alternate
+{
+    font-family: Arial;
+}
+.STC_Table_Main_Header_Row
+{
+}
+.STC_Table_Main_Header_Cell
+{
+    text-align: left;
+    font-family: Arial;
+    vertical-align: text-top; /*border: 1px solid #000000;*/
+}
+.STC_Table_Main_Footer_Row
+{
+}
+.STC_Table_Main_Footer_Cell
+{
+    font-family: Arial;
+}
+/*** Main Layout Table END ***********************/
+
+/*** Content Layout Table ************************/
+.STC_Table_Content
+{
+    width: 100%; 
+	white-space: normal;
+	margin: 0;
+	padding: 0;
+}
+/*
+.STC_Table_Content_Cell
+{
+    background-color: #ffffff;
+    border: 1px solid #bababa;
+    color: #000000;
+    font-family: Arial;
+}
+*/
+.STC_Table_Content_Cell
+{
+    background-color: transparent;
+    border: 0px solid #bababa;
+    color: #000000;
+    font-family: Arial;
+}
+.STC_borderframe{
+    border: 1px #bababa solid;
+    border-collapse: collapse; 
+    background-color: white;
+}
+
+/*** Content Layout Table END ********************/
+
+/*** Tab Table ***********************************/
+.STC_Table_Tab
+{
+    width: 100%;
+    background-color: transparent;
+}
+/*** Tab Table END *******************************/
+
+/*** Dividend Table END **************************/
+.STC_Dividend_Table
+{
+	border: 1px solid #bababa;
+}
+.STC_Table_Content_Cell .STC_Dividend_Table .STC_Div_Cell
+{
+	font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding: 5px 10px 5px 10px;
+    min-height: 25px;
+}
+.STC_Table_Content_Cell .STC_Dividend_Table .STC_DivHeader_Cell
+{
+	font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    min-height: 25px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+}
+/*** Dividend Table END **************************/
+
+/*** Error Layout Table **************************/
+.STC_Table_Error
+{
+    width: 100%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */
+    border: 1px solid #bababa;
+}
+.STC_Table_Error td
+{
+	padding: 5px;
+}
+.STC_Table_Height
+{
+    height:291px;
+}
+/*** Error Layout Table END **********************/
+
+/*** Maintenance Table ***************************/
+.STC_Table_Maintenance
+{
+    width: 100%;
+    border: 1px solid #dcdddf;
+	margin: 0;
+	padding: 0;
+}
+.STC_Table_Maintenance .STC_Row
+{
+    background-color: #e9f5f3;
+    border: 1px solid #dcdddf;
+}
+.STC_Table_Maintenance .STC_Row_Alternate
+{
+    background-color: #faf8f9;
+    border: 1px solid #dcdddf;
+}
+.STC_Table_Maintenance .STC_Cell_Label
+{
+    width: 120px;
+    padding: 5px 10px 5px 10px;
+    color: #606060;
+    font-weight: bold;
+    border-right: 1px dashed #b5bbbf;
+    font-family: Arial;
+}
+.STC_Table_Maintenance .STC_Cell_Data
+{
+    width: 625px;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial;
+    white-space: normal;
+}
+.STC_Table_Maintenance .STC_Cell_Data_wp_AuditTrial
+{
+    width: 200px;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial;
+}
+.STC_Table_Maintenance .STC_Cell_Info
+{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.STC_Table_Maintenance .STC_Cell_Button
+{
+    text-align: right;
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+}
+/*** Maintenance Table End ***********************/
+
+/*** Table ***************************************/
+.STC_Table
+{
+    width: 100%;
+}
+.STC_Table_Row
+{
+    background-color: #e9f5f3;
+    color: #000000;
+    border: 0;
+}
+.STC_Table_Row_Alternate
+{
+    background-color: #faf8f9;
+    color: #000000;
+    border: 0;
+}
+.STC_Table_Header_Row
+{
+    background-color: #5f87a1;
+    color: #ffffff;
+    border: 0;
+}
+.STC_Table_Header_Cell
+{
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.STC_Table_Cell
+{
+    border: 0;
+    font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+/*** Table END ***********************************/
+
+/*** Label ***************************************/
+.STC_Label_Header
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.STC_Label_Error
+{
+    font-size: larger;
+    font-variant: normal;
+    font-weight: bold;
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Label_Error2
+{
+    font-size: larger;
+    font-variant: normal;
+    font-weight: bold;
+    color: #FF0000;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Label_Normal
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+	cursor:text;
+	text-decoration: none !IMPORTANT;
+	pointer-events: none !IMPORTANT;
+}
+
+.STC_Label_Normal_Header
+{
+	font-size: 20px;
+	display: block;
+    word-break: break-word;
+    font-weight: 800;
+	word-wrap: break-word;
+}
+
+.STC_Label_Normal:link {color: black;}      /* unvisited link */
+.STC_Label_Normal:visited {color: black;}   /* visited link */
+.STC_Label_Normal:hover {color: black;}     /* mouse over link */
+.STC_Label_Normal:active {color: black;}
+.STC_Label_Normal:hover
+{
+	text-decoration: none !IMPORTANT;
+	pointer-events: none !IMPORTANT;
+}
+/*** Label END ***********************************/
+
+/*** Text ****************************************/
+/* Style */
+.STC_Text_Italic
+{
+    font-style: italic;
+}
+.STC_Text_Bold
+{
+    font-weight: bold;
+}
+.STC_Text_Uppercase
+{
+    text-transform: uppercase;
+}
+.STC_Text_Lowercase
+{
+    text-transform: lowercase;
+}
+.STC_Text_Capitalize
+{
+    text-transform: capitalize;
+}
+.STC_Text_Underline
+{
+    text-decoration: underline;
+}
+.STC_Text_NoUnderline
+{
+    text-decoration: none;
+}
+
+/* Alignment */
+.STC_Align_Left
+{
+    text-align: left;
+}
+.STC_Align_Right
+{
+    text-align: right;
+}
+.STC_Align_Center
+{
+    text-align: center;
+}
+.STC_Align_Justify
+{
+    text-align: justify;
+}
+
+/*Elements*/
+h2.STC_Title
+{
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #044678;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.STC_Seperator
+{
+    color: #10abb0;
+}
+/*** Text END ************************************/
+
+/*** Border **************************************/
+.STC_Border
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+.STC_NoBorder
+{
+    border: 0 !important;
+}
+/*** Border END **********************************/
+
+/*** Anchor and Link *****************************/
+a.STC_GreenLink:link, a.STC_GreenLink:visited, a.STC_GreenLink:hover, a.STC_GreenLink:active
+{
+    color: #10abb0;
+    font-size: 11px;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a.STC_Link:link, a.STC_Link:visited, a.STC_Link:hover, a.STC_Link:active
+{
+    color: navy;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+a.STC_LinkUpdate:link, a.STC_LinkUpdate:visited, a.STC_LinkUpdate:hover, a.STC_LinkUpdate:active, .STC_LinkUpdate
+{
+    color: Green;
+    font-size: 11px;
+    font-family: Arial;
+    text-decoration:underline;  
+}
+
+.STC_Link a:link, .STC_Link a:visited, .STC_Link a:hover, .STC_Link a:active
+{
+    color: navy;
+    font-size: 11px;
+    font-family: Arial;
+}
+/*** Anchor and Link END *************************/
+
+/*** Button **************************************/
+.STC_Button_Biggest
+{
+    width: 250px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Button_Bigger
+{
+    width: 180px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Button_Normal
+{
+    width: 120px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Button_Print
+{
+    width: 116px;
+    height: 31px;
+    background-color: transparent !important;
+    background-image: url(/_layouts/15/STC_LAYOUTS/images/Print.png);
+    border: 0 !important;
+    cursor: pointer !important;
+}
+
+.STC_Button_Print_CN
+{
+    width: 116px;
+    height: 31px;
+    background-color: transparent !important;
+    background-image: url(/_layouts/15/STC_LAYOUTS/images/Print_CN.png);
+    border: 0 !important;
+    cursor: pointer !important;
+}
+
+.STC_Button_Download
+{
+    width: 116px;
+    height: 31px;
+    background-color: transparent !important;
+    background-image: url(/_layouts/15/STC_LAYOUTS/images/Download.png);
+    border: 0 !important;
+    cursor: pointer !important;
+}
+
+.STC_Button_Download_CN
+{
+    width: 116px;
+    height: 31px;
+    background-color: transparent !important;
+    background-image: url(/_layouts/15/STC_LAYOUTS/images/Download_CN.png);
+    border: 0 !important;
+    cursor: pointer !important;
+}
+
+.STC_Button_Steward
+{
+    width: 116px;
+    height: 31px;
+    background-color: transparent;
+    background-image: url(/_layouts/images/Racing/Steward.png);
+    border: 0;
+    cursor: pointer;
+}
+.STC_Button_Normal_Grey
+{
+    width: 120px;
+    height: 37px;
+    background-image: url(/_layouts/images/ButtonNormalGrey.png);
+    border: 0;
+    cursor: pointer;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+.STC_Button_Bigger_Grey
+{
+    width: 195px;
+    height: 37px;
+    background-image: url(/_layouts/images/ButtonBiggerGrey.png);
+    border: 0;
+    cursor: pointer;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+.STC_Button_RSS
+{
+    width: 80px;
+    height: 23px;
+    background-image: url(/_layouts/images/RssButton.png);
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+}
+.STC_Button_ReadMore
+{
+    width: 139px;
+    height: 33px;
+    background-image: url(/_layouts/images/ButtonReadMore.png);
+	border: 0;
+	cursor: pointer;
+}
+.STC_Button_VirtualTour
+{
+    width: 161px;
+    height: 34px;
+    background-image: url(/_layouts/images/STCHomePageBanners/imgTrainingFacilities.png);
+	border: 0;
+	cursor: pointer;
+}
+.STC_Button_ViewChannel
+{
+    width: 141px;
+    height: 34px;
+    background-image: url(/_layouts/images/STCHomePageBanners/viewchannel.png);
+	border: 0;
+	cursor: pointer;
+}
+.STC_Button_ViewEmptyText
+{
+    width: 141px;
+    height: 34px;
+    background-image: url(/_layouts/images/STCHomePageBanners/viewbuttonempty.png);
+	border: 0;
+    cursor: pointer;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    color: White;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    white-space: normal !important;
+}
+/*** Button END **********************************/
+
+/*** Drop Down List ******************************/
+.STC_DDL
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+/*** Drop Down List END **************************/
+
+/*** Textbox *************************************/
+.STC_Textbox
+{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+}
+/*** Textbox *************************************/
+
+/*** Listbox *************************************/
+.STC_Listbox
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+/*** Listbox *************************************/
+
+/*** GridView ************************************/
+.STC_Table_Content_Cell .STC_Gdv_Header_Cell, .View .STC_Gdv_Header_Cell
+{    
+    border: 0;
+    font-family: Arial Narrow, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-height: 25px;
+}
+.STC_Table_Content_Cell .STC_Gdv_Cell, .View .STC_Gdv_Cell
+{
+    border: 0;
+    font-size: 9px;
+    font-family: Arial Narrow, Arial, Helvetica, sans-serif !important;
+    padding: 5px 2px 5px 2px;
+    min-height: 25px;
+}
+.STC_Gdv
+{
+	border-collapse: collapse;
+    width: 95%;
+    border: 0px solid #bababa;
+	white-space: normal;
+}
+
+.STC_Gdv_Row
+{
+	border: solid thin;
+	border-color:grey;
+    background-color: #ffffff;/*#e9f5f3;*/
+    color: #333333;
+}
+.STC_Gdv_Row_Alternate
+{
+	border: solid thin;
+	border-color:grey;
+    background-color: #ffffff;/*#faf8f9;*/
+    color: #333333;
+}
+.STC_Gdv_Header_Row
+{
+	border: solid thin;
+	border-color:grey !important;
+    background-color: #ebebeb;
+    color: #333333;
+}
+.STC_Gdv_Header_Cell
+{
+	border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    min-height: 25px;
+    padding: 5px 10px 5px 10px;
+	
+}
+.STC_Gdv_Cell
+{
+	border: 0;
+    font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding: 5px 10px 5px 10px;
+    min-height: 25px;
+}
+/*** GridView END*********************************/
+
+/*** Web Part Icon *******************************/
+.STC_Icon_WP
+{
+    width: 20px;
+    height: 20px;
+}
+/*** Web Part Icon END ***************************/
+
+/*** Custom **************************************/
+.STC_Half_Width
+{
+    width: 50% !important;
+}
+.STC_70_Width
+{
+    width: 70% !important;
+}
+.STC_Full_Width
+{
+    width: 100% !important;
+}
+.STC_980_Width
+{
+    width: 980px !important;
+}
+/*** Custom END **********************************/
+
+/*** Info Web Part *******************************/
+.STC_GenericContenHeaderFront_RacingMeeting {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRear_RacingMeeting {height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: right;}
+.STC_GenericContenHeaderRepeat_RacingMeeting {height: 30px;width: 318px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x;float: left;position: 
+relative !important; }
+.STC_InfoHeader
+{
+    width: 314px;
+    height: 30px;
+    background: url(/_layouts/images/InfoWebPart/InfoHeader.png);
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #c2c2c2;
+}
+.STC_Icon_RacingMeeting
+{
+    width: 38px;
+    height: 30px;
+	float: left;
+    background: url(/_layouts/images/InfoWebPart/RaceMeetingInfoIcon.png) top left no-repeat;
+}
+.STC_InfoHeaderText
+{
+    width: 276px;
+    font-weight: bold;
+    text-transform: uppercase;
+	position: relative;
+	left: 40px;
+	top:50%;
+	margin-top:-7px;
+}
+.STC_InfoBody
+{
+    width: 320px;
+    height: 310px;
+    color: #494949;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */  
+    border: 1px solid #c2c2c2;
+	border-top: 0;
+	padding: 0; 
+	overflow: hidden;
+}
+#divRaceCard { visibility: hidden; }
+#divHandicap { visibility: hidden; }
+#divNoData { visibility: hidden; }
+#divRaceCard { height: 310px; overflow:hidden; }
+.STC_Info_No_Data
+{
+    width: 318px;
+    height: 310px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */ 
+    border: 1px solid #c2c2c2;
+	border-top: 0;
+}
+.STC_Info_Loader
+{
+    width: 318px;
+    height: 310px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	background: #E8E8E8 url(/_layouts/images/loadingcirclests16.gif) center center no-repeat;
+}
+.STC_InfoHandicapDate
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.STC_InfoText
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_InfoLeftArrow
+{
+    width: 30px;
+    height: 15px;
+    background: url(/_layouts/images/InfoWebPart/InfoLeft.png) right no-repeat;
+    cursor: pointer;
+}
+.STC_InfoRightArrow
+{
+    width: 30px;
+    height: 15px;
+    background: url(/_layouts/images/InfoWebPart/InfoRight.png) left no-repeat;
+    cursor: pointer;
+}
+.STC_Handicap_Arrow
+{
+    position: relative;
+    top: -90px;
+}
+.STC_InfoTitle
+{
+    width: 243px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 15px;
+	overflow: hidden;
+}
+.STC_InfoHandicapTitle
+{
+    width: 243px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 16px !important;
+	position: relative;
+	top: -5px;
+}
+.STC_InfoTitle #divRaceMeetingName
+{
+	height: 29px;
+	overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	padding: 0;
+	margin:0;
+}
+.STC_InfoRaceName
+{
+    width: 243px;
+    height: 210px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_InfoSubHeaderText
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 11px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.STC_InfoLink:link, a.STC_InfoLink:visited, a.STC_InfoLink:active
+{
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494949;
+}
+.STC_InfoButton
+{
+    border: 0;
+    width: 135px;
+    height: 40px;
+    background-image: url(/_layouts/images/InfoWebPart/InfoButton.png);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: smaller;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*** Info Web Part END ***************************/
+
+/*** Img *****************************************/
+img
+{
+    vertical-align: middle;
+}
+img.STC_TabIcon
+{
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+.STC_Icon_Image
+{
+    vertical-align: middle;
+}
+.STC_RaceResultIcon
+{
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+/*** Img END *************************************/
+
+/*** Tab Container *******************************/
+.STC_TabIconDiv
+{
+    position: relative;
+    top: 30px;
+    height: 30px;
+    width: 88px;
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.STC_TabData .ajax__tab_body, .STC_TabPanel
+{
+    background-color: #ffffff;
+    background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+    padding: 10px !important;
+}
+.STC_TabData .ajax__tab_header
+{
+    height: 29px;
+    color: #000000;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+}
+.STC_TabData .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_TabData .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+}
+.STC_Tab .ajax__tab_tab
+{
+    min-width: 40px;
+}
+.STC_Tab .ajax__tab_body
+{
+    background-color: #ffffff;
+    background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+    padding: 10px;
+}
+.STC_Tab .ajax__tab_header
+{
+    height: 29px;
+    color: #000000;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+    padding-left: 88px;
+}
+.STC_Tab .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_Tab .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+}
+.STC_Panel_Tab
+{
+    border: 1px solid #c2c2c2;
+	border-top: 0;
+	padding: 10px;
+    background-color: #ffffff;
+    background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+}
+.STC_LBtnTab_Data
+{
+	text-decoration: none;
+	height: 29px !important;
+    color: #000000 !important;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+	border-top: 0;
+	border-bottom: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+	outline: none;
+    padding: 0 3px;
+}
+.STC_LBtnTab_Data_Active
+{
+	text-decoration: none;
+	height: 30px !important;
+    color: #000000 !important;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+	border-top: 0;
+	border-bottom: 0;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+	outline: none;
+	position: relative;
+	top: 1px;
+    padding: 0 3px;
+}
+/*** Tab Container END ***************************/
+
+/*** Panel ***************************************/
+.STC_Panel_Legend
+{
+    background-color: #ffffff;
+    padding: 10px;
+    /*background: #E8E8E8; for non-css3 browsers */
+    border: 0px solid #bababa !important;
+}
+.STC_Panel_RaceNote
+{
+    background-color: #ffffff;
+    padding: 10px;
+    border: 0px solid #bababa !important;
+}
+/*** Panel END ***********************************/
+
+
+/**********Brian Add Ons*************************/
+.STC_JockeyDirectory_Name
+{
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #00a9a7;
+}
+
+.STC_Table_Green_Cell_Header_Label
+{
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.STC_Table_Green_Cell_LightGreen
+{
+    background-color: #e8f5f3;
+    /*padding-bottom: 5px;
+    padding-top: 5px;*/
+    padding: 5px 10px 5px 10px;
+}
+
+.STC_Label_Bold_Black
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.STC_Table_Green_Cell_Header
+{
+    background-color: #00a9a7;
+    /*padding-bottom: 5px;
+    padding-top: 5px;*/
+    padding: 5px 10px 5px 10px;
+}
+
+.STC_Table_Green
+{
+    /*width: 100%;border-collapse: collapse;
+    width: 745px !important;*/
+    border: 1px solid #bababa;
+}
+
+/*.STC_Table_Green .STC_Gdv_Header_Cell
+{    
+    border: 0;
+    font-family: Arial Narrow, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    min-height: 25px;
+}
+
+.STC_Table_Green .STC_Gdv_Cell
+{
+    border: 0;
+    font-size: 11px;
+    font-family: Arial Narrow, Arial, Helvetica, sans-serif !important;
+    padding: 5px 2px 5px 2px;
+    min-height: 25px;
+}*/
+
+.STC_Table_Green_Cell_Grey
+{
+    background-color: #f5f5f5;
+    /*padding-bottom: 5px;
+    padding-top: 5px;*/
+    padding: 5px 10px 5px 10px;
+}
+
+.STC_Directory_ProfilePicture
+{
+    width: 150px;
+    height: 180px;
+}
+
+.STC_Gdv_Green_Row
+{
+    background-color: #e8f5f3;
+    color: #000000;
+    border: 0;
+}
+.STC_Gdv_Green
+{
+    width: 100%;
+    border: 1px solid #bababa;
+	white-space: normal;
+}
+.STC_Gdv_Green_Row_Alternate
+{
+    background-color: #f5f5f5;
+    color: #000000;
+    border: 0;
+}
+
+/*****************Mini Race Results & Dividend***************************/
+.STC_Gdv_PaleTale_Row_Alternate
+{
+    background-color: #e5ebeb; /**color: #000000;**/
+    border: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.STC_Gdv_PaleTale_Row
+{
+    border: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.STC_MiniRaceResultDividend_Padding
+{
+    padding-right: 5px;
+    padding-left: 5px;    
+}
+
+.STC_LandingPageMiniDividendHeightWidth
+{
+    width: 302px;
+}
+
+.STC_MiniRaceResultDividendIcon
+{
+    width: 40px;
+    height: 30px;
+    background-image: url(/_layouts/images/Racing/RaceDividend/MiniRaceDividendResultsIcon.png);
+}
+/*****************END Mini Race Results & Dividend*********************/
+.STC_Gdv_Green_Header_Row
+{
+    background-color: #00a9a7;
+    color: #FFFFFF;
+    border: 0;
+    
+}
+.STC_Table_Font
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+.STC_Raquo
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #10abb0;
+	display: inline;
+}
+a.STC_GreenLink_Enabled:link, a.STC_GreenLink_Enabled:visited, 
+a.STC_GreenLink_Enabled:active
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a.STC_GreenLink_Thin:link, a.STC_GreenLink_Thin:visited, a.STC_GreenLink_Thin:active
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.STC_Divider
+{
+    background-image: url(/_layouts/images/Divider.gif);
+    background-repeat: repeat-X;
+}
+
+.STC_Collapsible_Grey
+{
+    background-color: #ececec;
+}
+
+.STC_Collapsible_LightGrey
+{
+    background-color: #f0f0f0;
+}
+
+.STC_Label_HandicapListingDetails_Header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.STC_Small_Icon
+{
+    width: 20px;
+    height: 20px;
+}
+
+
+/***********Race Dividend Tab*************/
+.STC_MiniContentHeader
+{
+    color: #96dad9;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bolder;
+    text-transform: uppercase;
+	padding-left: 4px;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+.STC_MiniContent
+{
+    /*cursor: pointer;*/
+    padding-right: 1px;
+    padding-top: 1px;
+}
+a.mini:link, a.mini:visited, a.mini:active
+{
+    color: #96dad9 !important;
+	text-decoration: none;
+}
+.STC_LandingPageTabData .ajax__tab_body
+{
+    /**background-color: #ffffff; 	background: url(/_layouts/images/TabPanelBg.png) top 
+repeat-x; 	padding: 10px;**/
+}
+.STC_LandingPageTabData .ajax__tab_header
+{
+    height: 29px;
+    color: #96dad9;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bolder;
+    text-transform: uppercase; /**background-color: #ff0000; 	background: url(/_layouts/images/TabBg.png) bottom repeat-x;**/
+}
+.STC_LandingPageTabData .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    /**height: 28px;**/
+    padding-left: 5px;
+    padding-right: 4px;
+    padding-top: 1px; /**border-left: 1px solid #c2c2c2; 	border-right: 1px solid 
+#c2c2c2;**/ /**background-color: #0000ff; 	background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;**/
+}
+.STC_LandingPageTabData .ajax__tab_active .ajax__tab_inner
+{
+    /**height: 23px;
+    text-align: center; border-left: 1px solid #c2c2c2; 	border-right: 1px solid 
+#c2c2c2;**/
+    background: url(/_layouts/images/Racing/RaceDividend/MiniRaceDividendHeader.png) no-repeat center;
+}
+
+.STC_LandingPageDivider
+{
+    position: relative;
+    background-image: url(/_layouts/images/Racing/RaceDividend/RaceDividendDivider.png);
+    background-repeat: repeat-X;
+    background-position: center;
+    width: 100%;
+}
+.STC_LandingPageTabDataMini
+{
+    background: url(/_layouts/images/Racing/RaceDividend/MiniRaceDividendHeader.png) no-repeat center;
+}
+.Test
+{
+    position: relative;
+    padding-left: 10px;
+}
+
+.STC_Background_Table_Cell_Padding
+{
+	padding: 20px;
+}
+/******End Race Dividend Tab**************/
+/************Race Dividend Border*********/
+/*.STC_Table_Content_Cell .STC_RaceDividendBorder_All .STC_Gdv_Header_Cell,
+.STC_Table_Content_Cell .STC_RaceDividendBorder_All .STC_Gdv_Cell
+{ font-family: Arial !important; }*/
+.STC_RaceDividendBorder_Bottom, .STC_Table_Content_Cell .STC_RaceDividendBorder_Bottom
+{
+    border-width: 0px 1px 1px 1px;
+    border-color: #bababa;
+    border-style: solid;}
+.STC_Table_Content_Cell .STC_RaceDividendBorder_Top, .STC_RaceDividendBorder_Top
+{
+    border-width: 1px 1px 0px 1px;
+    border-color: #bababa;
+    border-style: solid;
+}
+.STC_Table_Content_Cell .STC_RaceDividendBorder_Left, .STC_RaceDividendBorder_Left
+{
+    border-width: 1px 0px 1px 1px;
+    border-color: #bababa;
+    border-style: solid;
+}
+.STC_Table_Content_Cell .STC_RaceDividendBorder_Right, .STC_RaceDividendBorder_Right
+{
+    border-width: 1px 1px 1px 0px;
+    border-color: #bababa;
+    border-style: solid;
+}
+.STC_Table_Content_Cell .STC_RaceDividendBorder_All, .STC_RaceDividendBorder_All
+{
+    border-width: 1px 1px 1px 1px;
+    border-color: #bababa;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+/********Race Dividend Border End*********/
+/**********Brian End**********************/
+
+
+/*** RaceCalendar Styles START - Jenson [4th December 2011]*************************/
+.STC_invalid_msg 
+{
+    color:Red;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Label_Smaller 
+{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rcmaintable 
+{
+    line-height: normal !important;
+}
+.RaceCalendar
+{
+    width: 740px;
+    background-color: transparent;
+}
+
+.STC_RaceMeetingInfoHeader
+{
+    width: 322px;
+    height: 30px;
+    background-image: url(/_layouts/images/InfoWebPart/InfoHeader.png);
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Icon_RaceMeeting
+{
+    width: 40px;
+    height: 30px;
+    background-image: url(/_layouts/images/InfoWebPart/RaceMeetingInfoIcon.png);
+}
+
+.STC_InfoText
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_RaceMeetingInfoLeftArrow
+{
+    width: 30px;
+    height: 15px;
+    background: url(/_layouts/images/InfoWebPart/InfoLeft.png) right no-repeat;
+    cursor: pointer;
+}
+.STC_RaceMeetingInfoRightArrow
+{
+    width: 30px;
+    height: 15px;
+    background: url(/_layouts/images/InfoWebPart/InfoRight.png) left no-repeat;
+    cursor: pointer;
+}
+.STC_RaceMeetingInfoTitle
+{
+    width: 247px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_RaceMeetingInfoSubHeaderText
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 11px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_RaceMeetingInfoButton
+{
+    border: 0;
+    width: 135px;
+    height: 40px;
+    background-image: url(/_layouts/images/InfoWebPart/InfoButton.png);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: smaller;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.STC_RaceCalendarPadding
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 302px;
+}
+
+.STC_RaceCalendarHeader
+{
+    width: 302px;
+    height: 30px;
+    background-image: url(/_layouts/images/EventCalendarWebParts/CalendarHeader.png);
+	background-repeat: no-repeat;
+}
+
+.STC_RaceCalendarIcon
+{
+    width: 40px;
+    height: 30px;
+    background-image: url(/_layouts/images/EventCalendarWebParts/CalendarIcon.png);
+}
+
+.STC_RaceCalendarHeaderText
+{
+    width: 262px;
+    height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.STC_RaceCalendarBody
+{
+    width: 302px;
+    height: 346px;
+    background-image: url(/_layouts/images/EventCalendarWebParts/CalendarBody.png);
+	background-repeat: no-repeat;
+}
+
+.STC_RaceCalendarFooter
+{
+    width: 302px;
+    height: 42px;
+    background-image: url(/_layouts/images/EventCalendarWebParts/CalendarFooter.png);
+	background-repeat: no-repeat;
+}
+
+.STC_RaceCalendarEvent
+{
+    vertical-align:top;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    text-align: center;
+    background: url(/_layouts/images/EventCalendarWebParts/EventDate.png) top no-repeat;
+}
+
+.STC_EventDate_Header {
+    color: #515151;
+    font-family: Arial Narrow;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    top: -3px;
+}
+.STC_EventDate_Body {
+    color: #515151;
+    font-family: Arial black, Arial;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    top: -7px;
+}
+.STC_EventDate_Footer {
+    color: #515151;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+    font-size: 9px;
+    position: relative;
+    text-align: center;
+    top: -14px;
+}
+
+.STC_RaceEventRow
+{
+    font-size: 10px;
+}
+
+.STC_RaceCalendar .rcSelected
+{
+    color: #a7610c;
+}
+
+
+.STC_RaceCalendar_Title
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.rcToday
+{
+    background: url(/_layouts/images/EventCalendarWebParts/TodayDate_Full.png) no-repeat;
+}
+
+.STC_RaceCalendarBigFont
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #10abb0;
+}
+
+.STC_RaceCalendarLink
+{
+    color: #10abb0;
+}
+
+/*** RaceCalendar Styles Jenson END *********************/
+
+
+/***********Priya*********************/
+.STC_LabelMsg{font-variant: normal;font-weight: bold;color: #c2c2c2;font-size: 12px;font-family: Arial, Helvetica, sans-serif;}
+.STC_Lbl_Img{margin-left: 5px;color: #494949 !important;position: absolute;top: 8px !important;}
+.STC_GdvCustom{border: 1px solid #c2c2c2 !important;width: 99.4% !important;font-size: 11px 
+!important;font-family: Arial, Helvetica, sans-serif !important;}
+.STC_Label_Success{font-style: normal;font-variant: normal;font-weight: bold;font-size: 
+12px;font-family: Arial, Helvetica, sans-serif;color: #008000 !important;}
+.STC_Gdv_wp_Notification{width: 100% !important;font-size: 12px !important;font-family: 
+Arial, Helvetica, sans-serif !important;}
+.STC_GenericContenHeaderFront{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left; padding: 0; margin: 0; 
+border:0;}
+.STC_GenericContenHeaderRear{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: left; padding: 0; margin: 0; 
+border:0;}
+.STC_GenericContenHeaderRepeat{height: 30px;width: 99%;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x;float: left;position: 
+relative !important; padding: 0; margin: 0; border:0;}
+.STC_GenericContenHeaderRepeatMiddle{height: 30px; width: 99%; background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x; vertical-align:middle; padding: 0; margin: 0; border:0;}
+.STC_Link:link, .STC_Link:visited, .STC_Link:hover, .STC_Link:active{color: #356887;font-size: inherit;font-family: inherit;}
+.STC_PaddingLeft_wp_Notification{padding-left: 90% !important;}
+.STC_ItemWrap{word-wrap: break-word;white-space: pre-wrap;}
+.STC_TextDec{text-decoration: none;}
+.STC_DisplayNone{display: none;}
+.STC_Gdv_Height{height: 25px;}
+.STC_Table_Border{border: 1px solid #c2c2c2;width: 100%;}
+.STC_Margin_Left{margin-left: 10px;}
+.STC_Margin_LeftFive{margin-left: 5px;}
+.STC_Margin_Top{margin-top: 10px;}
+.STC_Margin_Bottom{margin-bottom: 10px;}
+.STC_Padding_Left{padding-left: 5px;}
+.STC_Link_wp_Notification{color: red !important;}
+.STC_Div_wp_Notification{border: 1px solid #f5d591 !important;background: #fafad7 !
+important;}
+.STC_Align_Top{vertical-align: text-top;}
+.STC_Padding_Left_wp_ReRunBatchJob{padding-left: 89%;}
+.STC_HeaderTitle{font-family: arial,helvetica, sans-serif;color: #000000;font-size: 
+12px;font-weight: bold;position: relative;right: 15px;margin-left: 15px;}
+.STC_Table_wp_Prizemoney{width:740px;overflow: hidden;}
+.STC_Table_wp_Notification{width:100%;}
+.STC_Table_Admin{width:100% !important;}
+.STC_PaddingTop_wp_Notification{padding-top:0px;}
+.STC_wp_ContactUs_ul{list-style-type: none;margin: 0;padding: 0;}
+.STC_wp_ContactUs_li{list-style-type: none;height:20px;margin:0 0 5px 0;padding: 0;font-family: arial,helvetica, sans-serif;color: #000000;font-size: 12px;padding-top:9px; text-align: center;background-color: #E8E8E8;}
+.STC_ContentRight{border: 0;padding-top:0;}
+.STC_SlideContent{ width: 367px;border: 2px solid #c2c2c2;}
+.STC_Header_wp_ContactUs{height:20px;width:370px;background-color: #E8E8E8;text-align:center;font-family: arial,helvetica, sans-serif;padding-top: 9px;color: #000000;font-size: 12px;font-weight: bold;}
+.STC_Table_wp_ContactUs{width:740px;}
+.STC_ContentWidth_wp_ContactUs{width:370px;}
+.STC_AlignTop_wp_ContactUs{vertical-align:top;}
+.STC_Indent_wp_LatestVetUpdatesDetails{padding-left:4px;padding-right:4px;}
+.STC_Background_wp_Prizemoney{ background-color: White;}
+.STC_HeaderTitle_wp_LatestVeterinaryUpdates{font-family: arial,helvetica, sans-serif;color:#000000;font-size: 14px;font-weight: bold;position: relative;right: 15px;margin-left: 15px;}
+.STC_Display_Notification{display:none !important;}
+/*** Maintenance Table ***************************/
+.STC_Table_Maintenance_Admin
+{
+    width: 100%;
+   	margin: 0;
+	padding: 0;
+}
+.STC_Table_Maintenance_Admin .STC_Row
+{
+    background-color: #e9f5f3;
+    border: 1px solid #dcdddf;
+}
+.STC_Table_Maintenance_Admin .STC_Row_Alternate
+{
+    background-color: #faf8f9;
+    border: 1px solid #dcdddf;
+}
+.STC_Table_Maintenance_Admin .STC_Cell_Label
+{
+    width: 50%;
+    padding: 5px 10px 5px 10px;
+    color: #606060;
+    font-weight: bold;
+    border-right: 1px dashed #b5bbbf;
+    font-family: Arial;
+}
+.STC_Table_Maintenance_Admin .STC_Cell_Data
+{
+    width: 50%;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial;
+}
+.STC_Table_Maintenance_Admin .STC_Cell_Info
+{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.STC_Table_Maintenance_Admin .STC_Cell_Button
+{
+    text-align: right;
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+}
+.STC_Table_Maintenance .STC_Cell_Label_wp_AccessDefault
+{
+    /*width: 120px;*/
+    padding: 5px 10px 5px 10px;
+    color: #606060;
+    font-weight: bold;
+    border-right: 1px dashed #b5bbbf;
+    font-family: Arial;
+}
+/*** Maintenance Table End ***********************/
+.STC_ModalPop_Delete{padding: 5px 0px 10px 0px;min-width:300px;min-height:100px;background:white;text-align:center;}
+.STC_MandatoryFields_Cell{float:left !important;}
+.STC_MandatoryFields_Data{ color: red !important;}
+/******** Rank Chart Styles***************/
+.STC_Table_wp_RanckChart{width:300px;height:260px;padding:0px;margin:0px;}
+.STC_GenericContenHeaderFront_wp_RanckChart{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRear_wp_RanckChart{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: left;}
+.STC_GenericContenHeaderRepeat_wp_RanckChart{height: 30px;width: 296px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x;float: left;position: relative !important;}
+.STC_marginleft_wp_RankChart{margin-left:220px !important;} 
+.STC_FirstChild_wp_RankChart{height:296px;width:280px;padding-left:5px;padding-right:5px;padding-top:5px;}
+.STC_Sub_wp_RankChart{width:300px !important;border-left:1px solid #c2c2c2;border-right:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2;background-color:#f0f0f0;}
+.STC_TabRankChart .ajax__tab_container .ajax__tab_default{padding-top:0px;margin-top:0px;}
+.STC_TabRankChart .ajax__tab_default{padding-top:0px;}
+.STC_TabRankChart{height:328px;}
+.STC_TabRankChart .ajax__tab_body{height:183px !important;width:265px;}
+.STC_TabRankChart .ajax__tab_header{background-color:#f0f0f0 !important;}
+.STC_TabData .ajax__tab_header {padding:0px;margin:0px;height: 29px;color: #000000;font-size: 12px;font-family: Arial;font-weight: bold;text-transform: uppercase;background-color: #ff0000;background: url(/_layouts/images/TabBg.png) bottom repeat-x;}
+.STC_TabRankChart .ajax__tab_body
+{
+	background-color: #ffffff;
+	background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+	padding: 10px;
+	border-bottom: 1px solid #c2c2c2;border-left: 1px solid #c2c2c2;border-right: 1px solid #c2c2c2;
+} 
+.STC_TabRankChart .ajax__tab_header 
+{
+	height: 29px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial; 
+    font-weight: bold;
+    text-transform: uppercase;
+	background-color: #f0f0f0 !important;
+	padding-left: 0px;
+}
+.STC_TabRankChart .ajax__tab_tab
+{
+   height: 23px;
+	width:92px;    
+}
+
+.STC_TabRankChart .ajax__tab_inner 
+{
+	text-align: center;
+	cursor: pointer;
+	height: 23px;
+	width:92px;
+	padding-top: 6px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+	background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_TabRankChart .ajax__tab_active .ajax__tab_inner
+{
+	height: 23px;
+	text-align: center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+} 
+
+/**********Rank Chart END **************/
+/*************mini serach profile***********/
+.STC_Table_wp_MiniSearchProfile{width:325px;height:270px;padding:0px;}
+.STC_GenericContenHeaderFront_wp_MiniSearchProfile{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderFront.png);float: left;}
+.STC_GenericContenHeaderRepeat_wp_MiniSearchProfile{height: 30px;width: 321px;background: url(/_layouts/images/GenericContentHeaderRepeat.png) top repeat-x;float: left;position: relative !important;}
+.STC_GenericContenHeaderRear_wp_MiniSearchProfile{height: 30px;width: 2px;background: url(/_layouts/images/GenericContentHeaderRear.png);float: left;}
+.STC_HeaderImage_wp_MiniSearchProfile{margin-top:0px;padding-top:0px;padding-bottom:0px;}
+.STC_Tab_wp_MiniSearchProfile{width:320px;height:296px;padding:5px;padding-bottom:0px;background-color: #f0f0f0;}
+.STC_Label_Header_wp_MiniSearchProfile{text-align:center;}
+.STC_TabSearch .ajax__tab_container .ajax__tab_default{padding-top:0px;margin-top:0px;}
+.STC_TabSearch .ajax__tab_default{padding-top:0px;}
+.STC_TabSearch{height:328px;}
+.STC_TabSearch .ajax__tab_body{width:290px !important;height:174px !important;}
+.STC_TabSearch .ajax__tab_header{background-color:#f0f0f0 !important;}
+.STC_Sub_wp_MiniSearchProfile{width:325px !important;border-left:1px solid #c2c2c2;border-right:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2;background-color:#f0f0f0;}
+.STC_TabData .ajax__tab_header 
+{
+	height: 29px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial; 
+    font-weight: bold;
+    text-transform: uppercase;
+	background-color: #ff0000;
+	background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+}
+.STC_TabSearch .ajax__tab_body
+{
+	background-color: #ffffff;
+	background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+	padding: 10px;
+	border-bottom: 1px solid #c2c2c2;border-left: 1px solid #c2c2c2;border-right: 1px 
+solid #c2c2c2;
+} 
+.STC_TabSearch .ajax__tab_header 
+{
+	height: 29px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial; 
+    font-weight: bold;
+    text-transform: uppercase;
+	background-color: #f0f0f0 !important;
+	padding-left: 0px;
+}
+.STC_TabSearch .ajax__tab_tab 
+{
+    height: 23px;
+	width:90px;
+}
+.STC_TabSearch .ajax__tab_inner 
+{
+	text-align: center;
+	cursor: pointer;
+	height: 23px;
+	width:90px;
+	padding-top: 6px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+	background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_TabSearch .ajax__tab_active .ajax__tab_inner
+{
+	height: 23px;
+	text-align: center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+} 
+.STC_Button_Search{width: 62px;height: 32px;background: url(/_layouts/images/btnSearch.png);cursor: pointer;}
+/* Modal Popup */
+.STC_ModalPopupBG{background-color: #666699; filter: alpha(opacity=50);opacity: 0.7;}
+.STC_Popup{min-width:700px;min-height:150px;background:white;}
+.STC_Popup_Rerun{width:400px !important;height: 240px !important;min-width:700px;min-height:150px;background:white;}
+.STC_PopupRerun{width:542px !important;height: 282px !important;min-width:542px;min-height:282px;background:white;padding-top:1px !important;}
+.STC_InnerPopUp_Rerun{width:530px !important;height: 270px !important;min-width:530px;min-height:270px;background:white;border: 1px solid #c2c2c2;margin: 5px !important;}
+.STC_PopupCountry{width:482px !important;height: 192px !important;min-width:482px;min-height:192px;background:white;padding-top:1px !important;}
+.STC_InnerPopUp_Country{width:470px !important;height: 180px !important;min-width:470px;min-height:180px;background:white;border: 1px solid #c2c2c2;margin: 5px !important;}
+.STC_PopupRacingColourCode{width:482px !important;height:157px !important;min-width:482px;min-height:157px;background:white;padding-top:1px !important;}
+.STC_InnerPopUp_RacingColourCode{width:470px !important;height: 145px !important;min-width:470px;min-height:145px;background:white;border: 1px solid #c2c2c2;margin: 5px !important;}
+.STC_PopupStarFormPosition{width:412px !important;height:132px !important;min-width:412px;min-height:132px;background:white;padding-top:1px !important;}
+.STC_InnerPopUp_StarFormPosition{width:400px !important;height: 120px !important;min-width:400px;min-height:120px;background:white;border: 1px solid #c2c2c2;margin: 5px !important;}
+.STC_PopupLocation{width:512px !important;height:247px !important;min-width:512px;min-height:247px;background:white;padding-top:1px !important;}
+.STC_InnerPopUp_Location{width:500px !important;height: 235px !important;min-width:500px;min-height:235px;background:white;border: 1px solid #c2c2c2;margin: 5px !important;}
+.STC_PopupMsg{padding-left:5px;}
+.STC_Pop_Delete{width:320px;height:90px;border: 1px solid #c2c2c2;background:white; }
+.STC_Delete{width:308px;height:78px;border: 1px solid #c2c2c2;margin: 5px;background:white;}
+.STC_Cell_First_Search_wp_JockeyCode{padding-left: 5px;}
+.STC_Cell_Second_Search_wp_JockeyCode{width: 300px;}
+.STC_Controls{text-align:center;}
+.STC_modaldiv{font-style: normal;font-variant: normal;font-weight: normal;font-family: Arial, Helvetica, sans-serif;font-size: 12px;color: #000000;padding: 20px;}
+.STC_AjaxCalendar{z-index:100002 !important;}
+.STC_AjaxCalendar .ajax__calendar_container
+{
+	border:1px solid #F2f2f2;
+    background-color: #f0f0f0;
+    color:  #606060;
+}
+
+.STC_AjaxCalendar .ajax__calendar_other .ajax__calendar_day,
+.STC_AjaxCalendar .ajax__calendar_other .ajax__calendar_year
+{
+	color: Black;
+}
+
+.STC_AjaxCalendar .ajax__calendar_hover .ajax__calendar_day,
+.STC_AjaxCalendar .ajax__calendar_hover .ajax__calendar_month,
+.STC_AjaxCalendar .ajax__calendar_hover .ajax__calendar_year
+{
+	color:  White;
+}
+
+.STC_AjaxCalendar .ajax__calendar_active .ajax__calendar_day,
+.STC_AjaxCalendar .ajax__calendar_active .ajax__calendar_month,
+.STC_AjaxCalendar .ajax__calendar_active .ajax__calendar_year
+{
+	color: black;
+	font-weight:bold;
+}
+/*** Common *****************************************/
+img
+{
+	vertical-align: middle;
+}
+img.STC_TabIcon 
+{
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.STC_Icon_Image
+{
+    vertical-align: middle;   
+}
+/*** Img END *************************************/
+
+/*** Common Tab Container *******************************/
+.STC_TabData .ajax__tab_header 
+{
+	height: 29px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial; 
+    font-weight: bold;
+    text-transform: uppercase;
+	background-color: #ff0000;
+	background: url(/_layouts/images/TabBg.png) bottom repeat-x;
+}
+
+/*** Common Tab Container END *******************************/
+
+/*** Mini Search Tab Container *******************************/
+.STC_TabSearch .ajax__tab_body
+{
+	background-color: #ffffff;
+	background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+	padding: 10px;
+	border-bottom: 1px solid #c2c2c2;border-left: 1px solid #c2c2c2;border-right: 1px 
+solid #c2c2c2;
+} 
+.STC_TabSearch .ajax__tab_header 
+{
+	height: 29px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial; 
+    font-weight: bold;
+    text-transform: uppercase;
+	background-color: #f0f0f0 !important;
+	padding-left: 0px;
+}
+.STC_TabSearch .ajax__tab_inner 
+{
+	text-align: center;
+	cursor: pointer;
+	height: 23px;
+	width:90px;
+	padding-top: 6px;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+	background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_TabSearch .ajax__tab_active .ajax__tab_inner
+{
+	height: 23px;
+	text-align: center;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+} 
+/*** Mini Search Tab Container END*******************************/
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+
+/**********minisearchprofile*************/
+/***********Priya*********************/
+
+/**** Rakesh CSS Start ***************************/
+/*** Owners Page Banner Start ***/
+div.transbox
+{
+    width: 320px;
+    height: 360px;
+    margin: 15px 50px 15px 295px;
+    background-color: #ffffff;
+    border: 0px;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox p
+{
+    margin: 0px 80px 10px 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.STC-one
+{
+    width: 80px;
+    height: 15px;
+    border: 0px;
+    margin: 60px 40px 40px 60px;
+    background-color: #ffffff;
+}
+
+.STC-Trans-Img
+{
+    background-color: #ffffff;
+    height: 60px;
+    margin: -350px 50px 15px 400px;
+    position: relative;
+    z-index: 9999;
+    padding-right: 0px;
+    width: 330px;
+    height: 300px;
+    filter: alpha(opacity=85);
+    opacity:0.8; 
+}
+/*** Owners Page Banner End *********************/
+/*** STC Banners End ****************************/
+/*** Rakesh CSS END *****************************/
+
+
+
+
+
+/*** Genesis Web Part ***********************************************/
+/***wp_Album**************************************/
+.ST_Image_wp_Album_meta_data
+{
+    background: url(/_layouts/images/STCHomePageBanners/TranspBlack.png);
+    height: 13px;
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2px;
+    font-size: 8px;
+}
+.STC_Panel_wp_Album
+{
+    width: 150px;
+    vertical-align: top;
+}
+.STC_Image_wp_Album
+{
+    width: 150px;
+}
+.STC_Image_wp_Album_Focus
+{
+    width: 450px;
+}
+.STC_Panel_wp_Album_Thumbnail
+{
+    width: 80px;
+    vertical-align: top;
+    text-align: center;
+}
+.STC_Image_wp_Album_Thumbnail
+{
+    width: 80px;
+}
+.STC_Table_Content_wp_Album
+{
+    width: 650px;
+}
+.STC_Table_Content_wp_Album_Full
+{
+    width: 100%;
+}
+.STC_Table_Cell_wp_Album_Wrap
+{
+    text-align: justify;
+    white-space: pre-wrap;
+}
+.STC_Table_Cell_wp_Album_Right
+{
+    text-align: right;
+    white-space: pre-wrap;
+    width: 650px;
+}
+.STC_Table_Paging_wp_Album
+{
+    vertical-align: top;
+    text-align: center;
+}
+.STC_Cell_Paging_wp_Album_MarginTop
+{
+    padding-top: 6px;
+}
+.STC_Cell_Paging_wp_Album
+{
+    padding-top: 0px;
+}
+.STC_DataList_wp_Album
+{
+	width: 100%;
+    text-align: center;
+}
+/***wp_Album END**********************************/
+
+/*** wp_RacingLocalNews****************************/
+.STC_Thumbnail_wp_RacingLocalNews
+{
+    width: 100px;
+    height: 80px;
+}
+.STC_Controls_wp_RacingLocalNews
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_Table_Row_wp_RacingLocalNews
+{
+    background-color: #F3F2F2;
+}
+.STC_ControlFontStyle_wp_RacingLocalNews
+{
+    font-style: italic;
+}
+/*** wp_RacingLocalNews END************************/
+
+/*** wp_RacingLocalNews****************************/
+.STC_Thumbnail_wp_ClubNewsAndEvents
+{
+    border: 1;
+    text-align: left;
+}
+.STC_Tilte_Font_wp_ClubNewsAndEvents
+{
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.STC_Thumbnail_wp_ClubNewsAndEvents
+{
+    width: 250px;
+    height: 250px;
+}
+/*** wp_RacingLocalNews END************************/
+
+/*** wp_MediaCentreLandingNewsWebPart *****/
+.STC_Table_Row_wp_MediaCentreLanding
+{
+    background-color: #F0F0F0;
+}
+.STC_Table_Row_Alternate_wp_MediaCentreLanding
+{
+    background-color: #E8E8E8;
+}
+.STC_Tab_MediaCentre .ajax__tab_header
+{
+    background: url(/_layouts/images/STC/VideoBannerBg.png) bottom repeat-x; /*padding-left: 
+88px;*/
+}
+a.STC_GreenLink_wp_MediaCentre:link, a.STC_GreenLink_wp_MediaCentre:visited, 
+a.STC_GreenLink_wp_MediaCentre:hover, a.STC_GreenLink_wp_MediaCentre:active
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.STC_wp_MediaCentre_Title
+{
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+/*** wp_MediaCentreLandingNewsWebPart END *****/
+
+/*** wp_BlogListing *****/
+.STC_Blog_Title_wp_BlogListing
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.STC_Blog_Header_wp_OurBlog
+{
+    background-color: #D3D3D3;
+    height: 29px;
+}
+/*** wp_BlogListing END *****/
+
+/*** wp_MedialGallary****************************/
+/*** Gradient ************************************/
+.STC_Gradient
+{
+	/*background: #E8E8E8; for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */ 
+}
+/*** Gradient END ********************************/
+/*** wp_MedialGallary****************************/
+/*** Gradient ************************************/
+.STC_Gradient
+{
+	/*background: #E8E8E8; for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); /* for firefox 3.6+ */ 
+}
+/*** Gradient END ********************************/
+/*** Media Gallery Tab Container *******************************/
+.STC_Media_Gradient
+{
+    /*background: #E8E8E8; for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */
+}
+/*** Tab Container *******************************/
+.STC_Tab_MediaGall .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_Tab_MediaGall .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+}
+.STC_Tab_MediaGall .ajax__tab_body
+{
+
+   
+	position:absolute;
+	top: 69px;
+	left: 165px;
+}
+.STC_TabNews #divArrowVedios img
+{
+    position:relative;
+	top: -4px;
+	left: 155px;
+}
+.STC_TabNews #divArrowPhotos img
+{
+	position:relative;
+	top: -4px;
+	left: 250px;
+}
+
+.STC_TabMedia #divArrowNewsSingapore img
+{
+	position:absolute;
+	top: 515px;
+	left: 155px;
+}
+.STC_TabMedia #divArrowNewsOverseas img
+{
+	position:absolute;
+	top: 69px;
+	left: 260px
+}
+.STC_TabMedia .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 300px;
+	height: 300px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+
+    /*background-color: #ffffff;*/
+    padding: 10px; /*background: url(/_layouts/images/TabPanelBg.png) top repeat-x;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); 
+/* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */
+    width:315px;
+}
+.STC_Tab_MediaGall .ajax__tab_header
+{
+
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_TabMedia .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_TabMedia .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_homeUpcomingNews 
+{ 
+	width: 302px; 
+	height: 532px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+.STC_TabNews_NewsItemTable
+{
+	width: 300px;
+	height: 114px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+}
+.STC_TabNews_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.STC_TabNews_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.STC_TabNews_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.STC_TabNews_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.STC_TabNews_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+}
+.STC_TabNews_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.STC_TabNews_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.STC_TabNews_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top;
+	overflow: hidden;
+}
+.STC_TabNews_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.STC_TabMedia .readmore
+{
+	width: 290px;
+	height: 28px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+a.STC_GreenLink_Media_Thin:link, a.STC_GreenLink_Media_Thin:visited, a.STC_GreenLink_Media_Thin:active
+{
+    color: #10abb0;
+    height: 22px;
+    color: Black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; /* background-color: #E7E7E7;*/
+    background: url(/_layouts/images/STC/VideoBannerBg.png) bottom repeat-x; /*padding-left: 
+88px;*/
+}
+.STC_Tab_MediaGall .ajax__tab_inner
+{
+   
+	text-align: center;
+	cursor: pointer;
+	height: 22px;
+	width:100px;
+	padding-top: 0px;
+    padding-bottom:0px;	
+    background-color:#e7e7e7;
+	cursor:default;
+}
+a.STC_GreenLink_Media_Thin:link, a.STC_GreenLink_Media_Thin:visited, 
+a.STC_GreenLink_Media_Thin:active
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.STC_GreenLink_Lable_Thin
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_TabMedia .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	color:Black ;
+	cursor:default;
+} 
+.STC_TabMedia .ajax__tab_header 
+{
+	height: 22px;
+    
+    font-size: 12px;
+	font-family: Arial;     
+	background-color: #e7e7e7;	
+    padding-left: 0px;
+    cursor:default;
+    }
+.STC_TabMedia .ajax__tab_inner 
+{
+    
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+    
+	text-align: center;
+	cursor: pointer;
+	height: 22px;
+	width:100px;
+	padding-top: 0px;
+    padding-bottom:0px;	
+    background-color:#e7e7e7;
+	cursor:default;
+}
+.STC_TabMedia .ajax__tab_active .ajax__tab_inner
+{
+	height: 22px;
+	text-align: center;
+	font-weight:bold;	
+	cursor:default;
+	
+} 
+
+.STC-Media-meta-data
+{
+    background: url(/_layouts/images/STC/transpBlack.png);
+    height: 10px;
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: -1px;
+    padding-top: 8px;
+    font-size: 8px;
+}
+.STC_MediaIcon
+{
+	width: 116px;
+	height: 30px;
+	background: url(/_layouts/images/Media.jpg) no-repeat;
+	position:absolute;
+}
+.STC-photo-meta-data1 span
+{
+     font-size: 5px;
+}
+.STC_Tab_MediaTabIconDiv
+{
+    background-color: #ffffff;
+    background: url(/_layouts/images/TabPanelBg.png) top repeat-x;
+    padding: 10px;
+    background-image: url(/_layouts/images/Media.jpg);  
+    background-repeat :no-repeat;
+}
+.STC_Thumbnail_wp_MedialGallary
+{
+    width: 100px;
+    height: 80px;
+}
+.STC_Controls_wp_MedialGallary
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_Table_Row_wp_MedialGallary
+{
+    background-color: White;
+}
+.STC_ControlFontStyle_wp_MedialGallary
+{
+    font-style:normal;
+    font-family:Arial;
+    font-size:11px;
+    color:#000000;
+   
+}
+.STC_Thumbnail_wp_Host
+{
+    width: 200px;
+    height: 180px;
+    border: 1;
+    text-align: left;
+}
+.STC_Thumbnail_Padding_wp_MedialGallary
+{
+    padding-bottom: 5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-left:5px;
+}
+/*** wp_MedialGallary END************************/
+
+.STC_Tilte_Font_wp_ClubNewsAndEvents
+{
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.STC_Thumbnail_wp_ClubNewsAndEvents
+{
+    width: 225px;
+    height: 225px;
+}
+/*** wp_RacingLocalNews END************************/
+
+/*** wp_MediaCentreLandingNewsWebPart *****/
+.STC_Table_Row_wp_MediaCentreLanding
+{
+    background-color: #F0F0F0;
+}
+.STC_Table_Row_Alternate_wp_MediaCentreLanding
+{
+    background-color: #E8E8E8;
+}
+/*** wp_MediaCentreLandingNewsWebPart END *****/
+
+/*** wp_BlogListing *****/
+.STC_Blog_Title_wp_BlogListing
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.STC_Button_Normal_wp_ClubNews
+{
+    width: 140px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*** wp_BlogListing END *****/
+
+/***wp_TicketAndPackage**************************************/
+.STC_Button_Right_wp_TicketAndPackage
+{
+    margin-right: 30px;
+}
+.STC_Button_Left_wp_TicketAndPackage
+{
+    margin-left: 260px;
+}
+.STC_Panel_wp_TicketAndPackage
+{
+    height: auto !important;
+}
+
+.STC_Table_wp_TicketAndPackage
+{
+    height: 200px;
+    border: 0px;
+}
+.STC_Table_HeaderRow_wp_TicketAndPackage
+{
+    background-color: #F0F0F0;
+    text-align: center;
+    height: 20px;
+}
+.STC_TableRow_wp_TicketAndPackage
+{   
+}
+.STC_TableCell_HeaderRow_wp_TicketAndPackage
+{
+    border-left: 1.5px solid #494949;
+    font-size: larger;
+    font-variant: normal;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494949;
+    text-transform: uppercase;
+}
+.STC_TableCell_HeaderRow_wp_TicketAndPackage_First
+{
+    border-left: 0px solid #494949;
+    font-size: larger;
+    font-variant: normal;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494949;
+    text-transform: uppercase;
+}
+.STC_TableCell_Package_wp_TicketAndPackage
+{
+    width: 55%;
+}
+.STC_TableCell_PackageDes_wp_TicketAndPackage
+{
+    width: 40%;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.STC_TableCell_Extend_wp_TicketAndPackage
+{
+    width: 300px;
+}
+.STC_Panel_Thumbnail_Extend_wp_TicketAndPackage
+{
+    width: 100%;
+    vertical-align: top;
+}
+.STC_Gdv_wp_TicketAndPackage
+{
+    width: 100%;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 1px solid #696969;
+}
+.STC_Gdv_wp_TicketAndPackage td
+{
+    width: 25%;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 1px solid #696969;    
+}
+.STC_Gdv_Row_wp_TicketAndPackage
+{
+    background-color: #f0f0f0;
+    color: #696969;
+    border: 1px solid #696969;
+    height: 20px;
+}
+.STC_Gdv_Cell_wp_TicketAndPackage
+{
+    /*border: 1px solid #696969;*/
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #000000;
+}
+.STC_Gdv_Green_Row_wp_TicketAndPackage
+{
+    background-color: #e8f5f3;
+    color: #000000;
+    border: 0;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.STC_Gdv_Green_Row_Alternate_wp_TicketAndPackage
+{
+    background-color: #f5f5f5;
+    color: #000000;
+    border: 0;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.STC_Image_Extend_wp_TicketAndPackage
+{
+    width: 100%;
+    text-align: center;
+}
+.STC_Table_Thumbnail_wp_TicketAndPackage
+{
+    width: 105px;
+    padding-right: 10px;
+}
+.STC_Table_Thumbnail_Last_wp_TicketAndPackage
+{
+    width: 105px;
+    padding-right: 0px;
+}
+.STC_GreenLink_wp_TicketAndPackage
+{    
+	color: #10ABB0;
+    font-family: Arial;
+    text-decoration: none;
+    padding-left: 10px;
+}
+a.STC_GreenLink_wp_TicketAndPackage:link, a.STC_GreenLink_wp_TicketAndPackage:visited, 
+a.STC_GreenLink_wp_TicketAndPackage:hover, a.STC_GreenLink_wp_TicketAndPackage:active
+{
+    color: #10ABB0;
+    font-family: Arial;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.STC_GreenButton_wp_TicketAndPackage
+{
+    background-color: #10abb0; 
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 70px;
+    font-size: 12px;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+}
+.STC_ArrowRightButton_wp_TicketAndPackage
+{
+    background-image: url(/_layouts/images/arrowright_light.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    border: 0px;
+    width: 10px;
+}
+.STC_ArrowDownButton_wp_TicketAndPackage
+{
+    background-image: url(/_layouts/images/arrow-down.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    border: 0px;
+    width: 10px;
+}
+.STC_Label_Bigger_Bold_wp_TicketAndPackage
+{
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494949;
+}
+.STC_Label_Normal_Underline
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: underline;
+}
+.STC_Line_wp_TicketAndPackage
+{
+    color: #494949;
+    width: 100%;
+    height: .1em;
+}
+/***wp_TicketAndPackage END**************************************/
+
+/*** _wp_StaffTestimonials ****/
+.STC_Title_wp_StaffTestimonials
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.STC_Italic_wp_StaffTestimonials
+{
+    font-style: italic;
+    font-variant: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+/*** END_wp_StaffTestimonials ****/
+
+/*** wp_WinnersRewards************************/
+.STC_Thumbnail_wp_WinnersRewards
+{
+    width: 700px;
+    height: 250px;
+}
+
+/*** wp_WinnersRewardsEND************************/
+/***WP_CausesVSupp Start****/
+.STC_Thumbnail_wp_CausesVSupp
+{
+    width: 200px;
+    height: 150px;
+}
+.STC_Thumbnail_Padding_wp_CausesVSupp
+    {
+
+    padding-bottom: 10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-left:10px;
+ 
+}
+.STC_Table_Row_wp_CausesVSupp
+{
+    background-color: White;
+}
+.STC_Controls_wp_CausesVSupp
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_IMG_BODER
+{
+    border-bottom :#000000 1px solid;
+   border-left:#000000 1px solid;
+   border-right:#000000 1px solid;
+   border-top:#000000 1px solid;
+}
+.STC_ControlFontStyle_wp_CausesVSupp
+{
+    font-style: italic;
+}
+.STC_Button_CausesVSupport
+{
+      width: 200px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/***WP_CausesVSupp End*****/
+
+/***wp_Events Start****/
+.STC_Thumbnail_wp_Events
+{
+    width: 200px;
+    height: 150px;
+}
+.STC_Thumbnail_Padding_wp_Events
+{
+    padding-bottom: 10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-left:10px;
+ 
+}
+.STC_Table_Row_wp_Events
+{
+    background-color: White;
+}
+.STC_Controls_wp_Events
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_ControlFontStyle_wp_Events
+{
+    font-style:normal;
+}
+/***wp_Events End*****/
+
+/***WP_DonationsthroughTote Start****/
+
+.STC_Thumbnail_WP_DonationsthroughTote
+{
+    width: 200px;
+    height: 150px;
+}
+.STC_Table_Row_WP_DonationsthroughTote
+{
+    background-color: White;
+}
+.STC_Controls_WP_DonationsthroughTote
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_ControlFontStyle_WP_DonationsthroughTote
+{
+    font-style :normal;
+}
+.STC_Button_DonationsthroughTote
+{
+      width: 210px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/***WP_DonationsthroughTote End*****/
+
+/***wp_CustomerTestimonial Start****/
+.STC_Button_Testimonial
+{
+    width: 140px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Thumbnail_wp_CustomerTestimonial
+{
+	width: 200px;
+    height: 150px;
+   
+}
+.STC_Table_Row_wp_CustomerTestimonial
+{
+    background-color: White;
+}
+.STC_Controls_wp_CustomerTestimonial
+{
+    vertical-align: top;
+    border: 0;
+}
+.STC_ControlFontStyle_wp_CustomerTestimonial
+{
+    font-style: italic;
+}
+/***wp_CustomerTestimonial End*****/
+/******* wp_HostEvents Start*******/
+.STC_Button_RaceCourse
+{
+     width: 230px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Button_WinningLounge
+{
+     width: 260px;
+    height: 25px;
+    background-color: #EBEFFE;
+    border-color: #A0B3FA;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.STC_InfoHeaderText_HE
+{
+    width: 276px;
+    font-weight: bold;
+    text-transform: uppercase;
+	
+	left: 40px;
+	top:50%;
+	margin-top:-7px;
+}
+/*******wp_HostEvents End**********/
+/*** wp_Org_Mgmt Start************************/
+.STC_Banner_wp-Orgmgmt
+{
+    width: 700px;
+    height: 350px;
+}
+.STC_Org_wp-Orgmgmt
+{
+     width: 700px;
+    height: 500px;
+}
+/*** wp_Org_Mgmt END************************/
+
+/*** Tab Container *******************************/
+.STC_Tab_BgNoImage .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_Tab_BgNoImage .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+}
+.STC_Tab_BgNoImage .ajax__tab_body
+{
+    background-color: #F0F0F0;
+    padding: 10px;
+	height:auto !important;
+}
+.STC_Tab_BgNoImage .ajax__tab_header
+{
+    height: 29px;
+    color: #494949;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+	background: transparent !important;
+}
+.STC_Tab_BgNoImage .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+}
+.STC_Tab_BgNoImage .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+}
+/*** Tab Container END ***************************/
+/*** wp_PhotoSlider************************/
+.STC_Holder_Title_wp_PhotoSlider
+{
+    color: #10abb0;
+    font-size: 16px;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.STC_Holder_wp_SlideBody
+{
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(left,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */
+
+}
+
+.STC_Holder_wp_PhotoSlider
+{
+    padding: 0px 49px;
+    overflow: hidden;
+    position: relative;
+	/*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, 
+startColorstr='#FFFFFF', endColorstr='#E8E8E8');
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#E8E8E8)); 
+/* for webkit browsers */
+    /*background: -moz-linear-gradient(left,  #FFFFFF,  #E8E8E8); */ /* for firefox 3.6+ */
+   
+}
+.STC_Holder_wp_PhotoSlider a.link-prev, .STC_Holder_wp_PhotoSlider a.link-next
+{
+    position: absolute;
+    top: 76px;
+    left: 9px;
+    background: url(/_layouts/images/PhotoSlider/btn-prev.gif) no-repeat;
+    width: 25px;
+    height: 27px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.STC_Holder_wp_PhotoSlider a.link-next
+{
+    background: url(/_layouts/images/PhotoSlider/btn-next.gif) no-repeat;
+    left: auto;
+    right: 17px;
+}
+
+.STC_Title_wp_PhotoSlider
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center !important;
+    padding-top: 5px;
+}
+/*** wp_PhotoSliderEND************************/
+/*** wp_Milestones************************/
+.STC_Holder_wp_Milestones
+{
+    background-color: #f2f2f2;
+    padding: 0px 15px 0px 15px;
+}
+.STC_Holder_wp_Milestones_Grey
+{
+    background-color: #f2f2f2;
+    padding: 0px 5px 0px 5px;
+}
+.STC_Holder_wp_Milestones_LightGrey
+{
+    background-color: #f2f2f2;
+    padding: 0px 5px 0px 5px;
+}
+.STC_Title_wp_Milestones
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#676767;
+    /*color: #000000;*/
+}
+.STC_Label_Normal_wp_Milestones
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:#676767;
+}
+/*** wp_MilestonesEND************************/
+
+/*******wp_MajorRace Start**********/
+.STC_BIGThumbnail_wp_MajorRace
+{
+    width: 200px;
+    height: 180px;
+    border: 1;
+    text-align: left;
+}
+.STC_ControlFontStyle_wp_MajorRace
+{
+    font-style:normal;
+    font-size:small;
+    font-weight:bold;
+}
+.STC_ControlFontStyleHeader_wp_MajorRace
+{
+    font-style:normal;
+    font-size:large;
+    font-weight:bold;
+}
+.STC_TableCell_PackageDes_wp_MajorRace
+{
+	width: 40%;
+	vertical-align: top;
+	padding-left: 10px;
+}
+.STC_Panel_Thumbnail_Extend_wp_MajorRace
+{
+	Width: 100%;
+	vertical-align: top;
+}
+.STC_Thumbnail_wp_MajorRace
+{
+    width: 100px;
+    height: 80px;
+  
+}
+.STC_Thumbnail_Padding_wp_MajorRace
+{
+    padding-bottom: 10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-left:10px;
+}
+/*******wp_MajorRace End**********/
+
+/********Nagesh Media Centre Landing Page CSS********/
+.STC_MediaCentre_Title
+{
+    color: #000000;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.STC_Media_Centre_Grey
+{
+    background-color: #ececec;
+}
+.STC_Media_Centre_LightGrey
+{
+    background-color: #f0f0f0;
+}
+.STC_Media_Centre_Divider
+{
+    background-image: url(/_layouts/images/Divider.gif);
+    background-repeat: repeat-X;
+}
+.STC_DDL_News
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+.STC_IMG_News
+{
+    width: 106px;
+    height: 70px;
+    border-bottom: #000000 1px solid !important;
+    border-left: #000000 1px solid !important;
+    border-right: #000000 1px solid !important;
+    border-top: #000000 1px solid !important;
+}
+
+.STC_IMG_Photp_Slider
+{
+    width: 203px;
+    height: 139px;
+    border-bottom: #000000 1px solid !important;
+    border-left: #000000 1px solid !important;
+    border-right: #000000 1px solid !important;
+    border-top: #000000 1px solid !important;
+    border:7px;
+}
+.STC_IMG_OUR_Blog
+{
+    width: 106px;
+    height: 70px;
+    border-bottom: #000000 1px solid !important;
+    border-left: #000000 1px solid !important;
+    border-right: #000000 1px solid !important;
+    border-top: #000000 1px solid !important;
+}
+.STC_IMG_ClubNewsNews
+{
+    width: 220px;
+    height: 220px;
+    border-bottom: #000000 1px solid;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-top: #000000 1px solid;
+    vertical-align: top;
+}
+.STC_IMG_News_Details
+{
+    width: 130px;
+    height: 90px;
+    border-bottom: #000000 1px solid;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-top: #000000 1px solid;
+    vertical-align: top;
+}
+.STC_Media_Center_Body
+{
+    padding-left: 12px;
+    color: Black;
+    font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_Video_Banner_Body
+{
+    padding-left: 12px;
+    color: Black;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.STC_InfoText_Media
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif; /*font-size: 11px !important;*/
+}
+.STC_BottomBorder
+{
+    padding-top: 10px;
+}
+
+.STC_Media_Padding
+{
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.STC_Video_Padding
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.STC_BottomBorder_News td
+{
+    border-color: #c2c2c2;
+    border-style: solid;
+    border-bottom-width: 5px;
+}
+.STC_Media_Gradient
+{
+    /*background: #E8E8E8; for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */
+}
+
+/*** Tab Container *******************************/
+.STC_Tab_Media .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+    background: url(/_layouts/images/TabInactiveBg.png) top repeat-x;
+}
+.STC_Tab_Media .ajax__tab_active .ajax__tab_inner
+{
+    height: 23px;
+    text-align: center;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background: url(/_layouts/images/TabActiveBg.png) top repeat-x;
+}
+.STC_Tab_Media .ajax__tab_body
+{
+    /*background-color: #ffffff;*/
+    /*padding: 10px;*/ /*background: url(/_layouts/images/TabPanelBg.png) top repeat-x;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */
+}
+.STC_Tab_Media .ajax__tab_header
+{
+    height: 29px;
+    color: Black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; /* background-color: #E7E7E7;*/
+    /*background: url(/_layouts/images/STC/VideoBannerBg.png) bottom repeat-x; padding-left: 
+88px;*/
+}
+.STC_Tab_Media .ajax__tab_inner
+{
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    background-color: #0000ff;
+}
+a.STC_GreenLink_Media_Thin:link, a.STC_GreenLink_Media_Thin:visited, 
+a.STC_GreenLink_Media_Thin:active
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.STC_GreenLink_Lable_Thin
+{
+    color: #10abb0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** Tab Container END ***************************/
+/****** Video Banner*****/
+.STC_Holder_Title_wp_VideoBanner
+{
+    color: #10abb0;
+    font-size: 20px;
+    font-family: Arial Black, Arial;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 12px;
+    padding-top: 2px;
+}
+.STC-Video-cross-link
+{
+    display: block;
+    width: 175px;
+    margin: 18px -7px 0px 0px;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px solid black;
+}
+.STC-Video-nav-thumb
+{
+    border: 0px solid black;
+    margin-right: 0px;
+}
+.STC-Video-meta-data1
+{
+    background: url(/_layouts/images/STC/transpBlack.png);
+    height: 10px;
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: -1px;
+    padding-top: 8px;
+    font-size: 8px;
+}
+.STC-Video-meta-data span
+{
+    font-size: 13px;
+}
+.STC-Video-meta-data1 span
+{
+    font-size: 5px;
+}
+.STC_Video_Banner_BG
+{
+    background-image: url(/_layouts/images/STC/VideoBannerBg.png) !important;
+    width: 100%;
+}
+.STC_Video_wp_VideoBanner
+{
+    padding-left: 12px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.STC_VideoBanner
+{
+    padding-left: 12px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+.STC_Video_Active_thumb
+{
+    padding-top: 8px;
+    padding-bottom: -15px;
+    background-image: url(/_layouts/images/Arrow1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-top: 10px;
+}
+/******** End Video Banner****/
+.STC_Holder_Content_wp_VideoTitle
+{
+    width: 380px;
+}
+.STC_Table_Paging_wp_Vedio
+{
+    vertical-align: top;
+    text-align: right;
+}
+.STC_Video_wp_BecomeAnOwners
+{
+    padding-left: 13px;
+    padding-top: 4px;
+    vertical-align: top;
+}
+.STC_Table_BG_Image
+{
+    background-color: White !important;
+}
+.STC_WPHeader_BG_Image
+{
+    font-size: 16px !important;
+    background: transparent url("/UILib/ContentHeaderBg.png") left top repeat-x;
+    font-family: Arial Black, Arial;
+    font-weight: 900 !important;
+    color: #10abb0;
+    text-transform: uppercase;
+}
+.STC_WPVTitle_wp_Recent
+{
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+.STC_WPVTitle_wp_BlogHeader
+{
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+.STC_IMG_Video_Recent
+{
+    width: 65px;
+    height: 45px;
+    border-bottom: #000000 1px solid !important;
+    border-left: #000000 1px solid !important;
+    border-right: #000000 1px solid !important;
+    border-top: #000000 1px solid !important;
+}
+.STC_WPTitle_wp_Recent
+{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 12px !important;
+    font-family: Arial Black, Arial;
+    font-weight: 900 !important;
+    color: Black;
+    text-transform: uppercase;
+}
+.STC_Category_wp_Recent
+{
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 12px !important;
+    font-family: Arial Black, Arial;
+    font-weight: 900 !important;
+    color: Black;
+    text-transform: uppercase;
+}
+.STC_Category_BG_wp_Recent
+{
+    padding-top: 10px;
+    padding-bottom: 2px;
+    background: transparent url("/_layouts/images/Divider.gif") left top repeat-x;
+}
+.STC_CategoryLink_wp_Recent
+{
+    padding-left: 18px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    color:#10abb0;
+    font-weight:bold;
+}
+.STC_Holder_Title_wp_VideoTitle
+{
+    color: #10abb0;
+    font-size: 16px;
+    font-family: Arial Black, Arial;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+.STC_Video_wp_VideoPlayer
+{
+    padding-left: 13px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 0px;
+}
+.STC_Video_wp_Banner_VideoPlayer
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.STC_InfoText_News
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px !important; 
+    color:Black;
+}
+.STC_InfoText_BlogBody
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px !important; 
+    color:Black;
+}
+.STC_InfoText_RaceVideo_Description
+{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 8px;
+    padding-right: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px !important; 
+   color:Black;
+}
+.STC_Holder_Video_Decscription_Width
+{
+    width: 216px;
+}
+.STC_Table_Paging_wp_Vedio
+{
+    vertical-align: top;
+    text-align: right;
+}
+.STC_Video_wp_BecomeAnOwners
+{
+    padding-left: 13px;
+    padding-top: 4px;
+    vertical-align: top;
+}
+.STC_BlogListing_Width
+{
+    width: 500px;
+}
+.STC_Recent_Width
+{
+    width:100%;
+}
+
+
+/*** wp_MediaCentreLandingNewsWebPart END *****/
+
+/*** wp_RaceMultimedia Start *******************************/
+
+.wp_RaceMultimedia .STC_TabRaceRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: absolute;
+	left: 315px;
+}
+.STC_TabRace #divArrowVedios img
+{
+    
+	position:relative;
+	top: -4px;
+	left: 155px;
+}
+.STC_TabRace #divArrowPhotos img
+{
+	position:relative;
+	top: -4px;
+	left: 250px;
+}
+.STC_TabRace .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 325px;
+	height: 301px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+	overflow: hidden;
+} 
+.STC_TabRace .ajax__tab_header 
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 116px;
+}
+.STC_TabRace .ajax__tab_outer
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_TabRace .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_TabRace .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_RaceMultimedia 
+{ 
+	width: 325px; 
+	height: 332px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wp_RaceMultimedia  .STC_TabRace_NewsItemTable
+{
+	width: 325px;
+	height: 116px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+	top: -13px;
+}
+.STC_TabRace_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.STC_TabRace_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.STC_TabRace_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.STC_TabRace_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.STC_TabRace_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+}
+.STC_TabRace_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.STC_TabRace_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.STC_TabRace_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 3px 0 0 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top;
+	overflow: hidden;
+}
+.STC_TabRace_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.wp_RaceMultimedia  .STC_TabRace .readmore
+{
+	width: 290px;
+	height: 28px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+	position: relative;
+	top: -18px;
+}
+/*** wp_RaceMultimedia End *******************************/
+
+/**** End********************************/
+/*** Genesis Web Part END ********************************************/
+
+/** Jenson UpComing Races and Events WebParts Tab Container Classes- 23rd Dec 2011 **/
+
+
+
+
+.STC_Wagering_selected_region
+{
+    text-decoration: underline;  
+}
+
+.STC_Wagering_region_location 
+{
+    border-style: solid;
+	border-width:1px;
+}
+
+.STC_Table_Main_Cell_Static_SgPools
+{
+    border:1px solid #c2c2c2;
+    background-color: #E8E8E8; 
+}
+
+.STC_UpComingItem
+{
+    width: 320px;
+    height: 60px; /*65px;*/
+    background: url(/_layouts/images/UpComingWebParts/UpComingItemBackground.png);
+}
+.STC_EventFooter
+{
+    width: 322px;
+    height: 42px;
+    background: url(/_layouts/images/UpComingWebParts/EventFooter.png);
+}
+
+.STC_UpComingEventHeader
+{
+    position: relative;
+    left: -3px;
+}
+
+.STC_UpComingEventBody
+{
+    font-weight: bold;
+    position: relative;
+    left: -3px;
+}
+
+.STC_UpComingEventFooter
+{
+    position: relative;
+    left: -3px;
+    font-weight: bold;
+}
+
+.STC_UpComingHeaderRow
+{
+    width: 320px;
+    height: 30px;
+    /*background-image: url(/_layouts/images/EventCalendarWebParts/CalendarHeader.png);
+    background: #E8E8E8; */
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E8E8E8');
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E8E8E8)); 
+    background: -moz-linear-gradient(top,  #FFF,  #E8E8E8); 
+}
+
+
+.STC_UpComingFooter
+{
+    width: 322px;
+    height: 42px;
+    background-image: url(/_layouts/images/UpComingWebParts/EventFooter.png);
+    background-repeat: no-repeat;
+    
+}
+
+img.STC_UpComingTabIcon
+{
+    vertical-align: middle;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+/** End of UpComing Races and Events WebParts **/
+
+
+.STC_Table_Main_Cell_Gradient
+{
+    border:1px solid #c2c2c2;
+    padding: 10px;
+   /* border-radius:10px;*/
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#FFFFFF', endColorstr='#E8E8E8');
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); 
+    background: -moz-linear-gradient(left,  #FFFFFF,  #E8E8E8);     
+}
+
+.STC_Table_Main_Cell_Static
+{
+    border:1px solid #c2c2c2;
+    background-color: #E8E8E8;
+    padding: 10px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;    
+}
+
+.STC_Table_Main_Cell_Blank
+{
+    padding: 10px;  
+}
+
+#tdAdminCharge p
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#tdBusinessHour p
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.STC_calendar_day_night_icon
+{
+    vertical-align:top;
+}
+
+
+/*** HomePageMediaWebPart *******************************/
+.wp_homeMultiMedia .STC_HomeMediaIcon
+{
+	width: 100px;
+	height: 31px;
+	background: url(/_layouts/images/Media.jpg) no-repeat;
+	position:relative;
+	z-index: 2;
+}
+.wp_homeMultiMedia .STC_HomeMediaRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: relative;
+	top: -30px;
+	left: 323px;
+	z-index: 2;
+}
+.STC_HomeMedia 
+{
+	position: relative;
+	top: -60px;
+}
+.STC_HomeMedia #divArrowVedios img
+{
+	position:relative;
+	top: -5px;
+	left: 152px;
+	z-index: 2;
+}
+.STC_HomeMedia #divArrowPhotos img
+{
+	position:relative; 
+	top: -5px;
+	left: 247px;
+	z-index: 2;
+}
+.STC_HomeMedia .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 323px;
+	height: 501px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+} 
+.STC_HomeMedia .ajax__tab_header 
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 116px;
+}
+.STC_HomeMedia .ajax__tab_tab
+{
+	width: 92px;  
+	height: 30px;
+}
+.STC_HomeMedia .ajax__tab_outer
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_HomeMedia .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_HomeMedia .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_homeMultiMedia 
+{ 
+	width: 320px; 
+	height: 532px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wp_homeMultiMedia  .STC_HomeMedia_NewsItemTable
+{
+	width: 320px;
+	height: 91px;
+	/*border-top: 1px solid #ffffff;*/
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+	top: -14px;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCellContainer
+{
+	width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+	overflow: hidden;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top; 
+	overflow: hidden;
+}
+.wp_homeMultiMedia .STC_HomeMedia_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.wp_homeMultiMedia  .STC_HomeMedia .readmore
+{
+	width: 310px;
+	height: 26px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+    background: url(/_layouts/images/STC/MultiMediaFooter2.png);
+	position: relative;
+	top: -15px;
+}
+/*** HomePageMediaWebPart *******************************/
+
+/*** RacingPageMediaWebPart *******************************/
+.wp_RacingMedia .STC_RacingMediaIcon
+{
+	width: 96px;
+	height: 31px;
+	background: url(/_layouts/images/Media.jpg) no-repeat;
+	position:relative;
+	z-index: 2;
+}
+.wp_RacingMedia .STC_RaceMediaRearBorder
+{
+	width: 2px;
+	height: 30px;
+	background: url(/_layouts/images/GenericContentHeaderRear.png) no-repeat;
+	position: relative;
+	top: -30px;
+	left: 324px;
+	z-index: 2;
+}
+.STC_RacingMedia 
+{
+	position: relative;
+	top: -60px;
+}
+.STC_RacingMedia #divArrowVedios img
+{
+	position:relative;
+	top: -5px;
+	left: 152px;
+	z-index: 2;
+}
+.STC_RacingMedia #divArrowPhotos img
+{
+	position:relative; 
+	top: -5px;
+	left: 247px;
+	z-index: 2;
+}
+.STC_RacingMedia .ajax__tab_body
+{
+	background-color: #eaeaea;	
+	padding: 0px;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+	width: 323px;
+	height: 332px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E8E8)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFFFFF,  #E8E8E8); /* for firefox 3.6+ */ 
+} 
+.STC_RacingMedia .ajax__tab_header 
+{
+	height: 30px;
+    color: #000000; 
+    font-size: 12px;
+	font-family: Arial;     
+	background: url(/_layouts/images/GenericContentHeaderRepeat.png) repeat-x;
+    cursor:default;
+	margin-bottom:0px;
+	vertical-align:top;
+	padding-left: 116px;
+}
+.STC_RacingMedia .ajax__tab_tab
+{
+	width: 92px;  
+	height: 30px;
+}
+.STC_RacingMedia .ajax__tab_outer
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+}
+.STC_RacingMedia .ajax__tab_inner 
+{
+	width: 92px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+	color: #909090;
+	font-family: Arial;
+}
+.STC_RacingMedia .ajax__tab_active .ajax__tab_inner
+{
+	font-weight: bold;
+	cursor:default;	
+	color: #484848;
+} 
+.wp_RacingMedia 
+{ 
+	width: 323px; 
+	height: 332px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wp_RacingMedia  .STC_RaceMedia_NewsItemTable
+{
+	width: 320px;
+	height: 96px;
+	/*border-top: 1px solid #ffffff;*/
+	border-bottom: 1px solid #dadadc;
+	position: relative;
+	top: -14px;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable p
+{
+	padding: 0;
+	margin: 0;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell td
+{
+	vertical-align: text-top;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .ImageCell
+{
+	width: 106px;
+	height: 90px;
+	padding: 15px 15px 0 15px;
+	vertical-align: text-top;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCellContainer
+{
+	width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell
+{
+	width: 162px; 
+	max-width: 162px; 
+	height: 114px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: text-top;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell .title 
+{ 
+	width: 162px; 
+	max-width: 162px;   
+	height: 28px; 
+	max-height: 28px;
+	padding: 8px 0 0 0; 
+	margin:0; 
+	border:0; 
+	overflow: hidden;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell .title a
+{
+	color: #562783;
+	font-weight: bold;
+	font-family: Arial;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell .date
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #6e6e6e;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	max-height: 10px;
+	font-weight: normal;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell .text
+{
+	width: 162px; 
+	max-width: 162px; 
+	color: #000000;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 45px;
+	max-height: 45px;
+	font-weight: normal;
+	vertical-align: text-top; 
+	overflow: hidden;
+}
+.wp_RacingMedia .STC_RaceMedia_NewsItemTable .TextCell .morelink
+{
+	width: 162px; 
+	max-width: 162px; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 10px;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+.wp_RacingMedia  .STC_RacingMedia .readmore
+{
+	width: 310px;
+	height: 26px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+    background: url(/_layouts/images/STC/MultiMediaFooter2.png);
+	position: relative;
+	top: -15px;
+}
+
+.wp_HomeMultiMediaTimeBG
+{
+    margin: -30px 16px 0px 47px;
+    color: White;
+    text-align: center;
+    background-color: Black;
+    padding-right: 5px;
+    top: -4px;
+    bottom: 3px;
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*** RacingPageMediaWebPart *******************************/
+
+
+
+/*** Media Selectin Web Part *********************************/
+.STC_Div_Content
+{
+    width: 965px; 
+    overflow-x: scroll;
+}
+/*** Media Selectin Web Part End *****************************/

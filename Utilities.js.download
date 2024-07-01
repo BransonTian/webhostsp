@@ -1,0 +1,83 @@
+﻿function showWaitScreen(strTitle, strMessage, intHeight, intWidth) {
+    if (intHeight == 0)
+        intHeight = 80;
+
+    if (intWidth == 0)
+        intWidth = 300;
+    return SP.UI.ModalDialog.showWaitScreenWithNoClose(strTitle, strMessage, intHeight, intWidth);
+}
+
+function hideWaitScreen(dialog) {
+    dialog.close(SP.UI.DialogResult.OK);
+}
+
+function showLoadingNotification(strMessage, blnSticky) {
+    return SP.UI.Notify.addNotification("<img src='/_layouts/15/STC_LAYOUTS/images/loadingcirclests16.gif' style='vertical-align: middle;'>" + strMessage, blnSticky);
+}
+
+function showNotification(strMessage, blnSticky) {
+    return SP.UI.Notify.addNotification(strMessage, blnSticky);
+}
+
+
+function hideNotification(notification) {
+    SP.UI.Notify.removeNotification(notification);
+}
+
+function printPage(idOfWebPart, title) {
+    var printElement = $("[id$='" + idOfWebPart + "']");
+    $(printElement).printArea({ mode: "popup", popTitle: title });
+	//var print = "div.STC_Table_Content_Cell";
+	//$( print ).printArea( { mode: "popup", popTitle: title });
+};
+
+function deleteConfirmation(deleteID, item) {
+    var options = {
+        title: 'Confirm Delete',
+        width: 400,
+        height: 135,
+        url: '/_layouts/15/STC_LAYOUTS/DeleteConfirmationDialog.aspx?item=' + item,
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Deleting...', 'Please wait while the ' + item + ' is being deleted.', 80, 300);
+                $("[id$='__EVENTTARGET']").val('Delete');
+                $("[id$='_hidDeleteID']").val(deleteID);
+                __doPostBack();
+            }
+        }
+    };
+	SP.SOD.execute('SP.UI.Dialog.js', 'SP.UI.ModalDialog.showModalDialog',options);
+    //SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function OpenPopUp(url, wt, ht) {
+    w = wt; 
+    h = ht;
+    var winl = (screen.width - w) / 2;
+    var wint = (screen.height - h) / 2;
+    var settings = 'height=' + h + ',';
+    settings += 'width=' + w + ',';
+    settings += 'top=' + wint + ',';
+    settings += 'left=' + winl + ',';
+    settings += 'status=0,';
+    settings += 'scrollbars=1,';
+    settings += 'resizable=Yes,';
+    window.open(url, '', settings);
+    return false;
+}
+
+function waitBannerNotification() {
+    __doPostBack(this.name,'');
+    document.getElementById('lblWarning').innerHTML = 'Please wait until saved';
+}
+
+function savedBannerNotification(temp) {
+    //document.getElementById('<%= lblWarning.ClientID %>').innerHTML = 'Saved';
+	document.getElementById(temp.id).innerHTML = 'Saved, Please refresh page to see new notification message';
+
+	setTimeout(function(){
+		document.getElementById(temp.id).innerHTML = '';
+	}, 4000);
+}

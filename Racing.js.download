@@ -1,0 +1,393 @@
+﻿//Common-----------------------------------------------------------------------------------------------------------------
+function showProcessing() {
+    showWaitScreen('Processing...', 'Please wait while the files are being processed. This may take some time.', 80, 300);
+}
+
+function showSaving(item) {
+    showWaitScreen('Saving...', 'Please wait while the ' + item + ' is being saved.', 80, 300);
+}
+
+function showPublishing(item) {
+    showWaitScreen('Publishing...', 'Please wait while the ' + item + ' is being published.', 80, 300);
+}
+
+function showCancelling(item) {
+    showWaitScreen('Cancelling...', 'Please wait while the ' + item + ' is cancelling.', 80, 300);
+}
+//Common-----------------------------------------------------------------------------------------------------------------
+
+//wp_PublishRaceCard & wp_EditPublishRaceCard----------------------------------------------------------------------------
+function addOverseaRace(meetingID, meetingName, status) {
+    var options = {
+        title: 'Add Oversea Race',
+        url: '/_layouts/15/STC_Layouts/AddOverseaRace.aspx?RaceEventCalendarID=' + meetingID + '&meetingName=' + meetingName + "&status=" + status,
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result, isSaved) {
+            if (isSaved == "1") {
+                $("[id$='__EVENTTARGET']").val('AddOverseaRace');
+                showLoadingNotification("Refreshing Race Card...", true);
+                __doPostBack();
+            }
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function deleteOverseaRace(raceCardHeaderID) {
+    var options = {
+        title: 'Confirm Delete',
+        width: 400,
+        height: 135,
+        url: '/_layouts/15/STC_LAYOUTS/DeleteConfirmationDialog.aspx?item=Race',
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Deleting...', 'Please wait while the Oversea Race is being deleted.', 80, 300);
+                $("[id$='__EVENTTARGET']").val('DeleteOverseaRace');
+                $("[id$='_hidDeleteID']").val(raceCardHeaderID);
+                __doPostBack();
+            }
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function addReferenceURL(index) {
+    index = index - 1;
+    var url = $("[id$='" + index + "_txtReferenceURL']").val();
+
+    if (url.length > 12) {
+        var frame = document.createElement('iframe');
+        frame.setAttribute('src', url);
+        frame.setAttribute('width', '99%');
+        frame.setAttribute('height', '99%');
+
+        var options = {
+            title: 'Reference URL',
+            html: frame,
+            width: 800,
+            height: 600,
+            allowMaximize: true,
+            showClose: true,
+            dialogReturnValueCallback: function (result) {
+            }
+        };
+        SP.UI.ModalDialog.showModalDialog(options);
+    }
+}
+function addReferenceURLCN(index) {
+    index = index - 1;
+    var url = $("[id$='" + index + "_txtRefUrlCN']").val();
+
+    if (url.length > 12) {
+        var frame = document.createElement('iframe');
+        frame.setAttribute('src', url);
+        frame.setAttribute('width', '99%');
+        frame.setAttribute('height', '99%');
+
+        var options = {
+            title: 'Reference URL',
+            html: frame,
+            width: 800,
+            height: 600,
+            allowMaximize: true,
+            showClose: true,
+            dialogReturnValueCallback: function (result) {
+            }
+        };
+        SP.UI.ModalDialog.showModalDialog(options);
+    }
+}
+
+function addReferenceURLOverseaCN(index) {
+    index = index - 1;
+    var url = $("[id$='" + index + "_txtReferenceURLCN']").val();
+
+    if (url.length > 12) {
+        var frame = document.createElement('iframe');
+        frame.setAttribute('src', url);
+        frame.setAttribute('width', '99%');
+        frame.setAttribute('height', '99%');
+
+        var options = {
+            title: 'Reference URL',
+            html: frame,
+            width: 800,
+            height: 600,
+            allowMaximize: true,
+            showClose: true,
+            dialogReturnValueCallback: function (result) {
+            }
+        };
+        SP.UI.ModalDialog.showModalDialog(options);
+    }
+}
+function uploadJockeySilk() {
+    var options = {
+        title: 'Upload Jockey Silk',
+        url: '/_layouts/15/STC_LAYOUTS/Racing/UploadFile.aspx',
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result, url) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Uploading...', 'Please wait while Jockey Silk file is being uploaded.', 80, 300);
+
+                $("[id$='__EVENTTARGET']").val('JockeySilk');
+                $("[id$='_hidJockeySilkFileURL']").val(url);
+                
+                __doPostBack();
+            }
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function uploadFile(type, filename, IsSGRace) {
+    var options = {
+        title: 'Upload ' + type,
+        url: '/_layouts/15/STC_LAYOUTS/Racing/UploadFile.aspx?filename=' + filename + '&RaceType=' + IsSGRace,
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result, url) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Uploading...', 'Please wait while the ' + type + ' file is being uploaded.', 80, 300);
+
+                $("[id$='__EVENTTARGET']").val(type);
+
+                switch (type) {
+                    case 'Quick Form':
+                        $("[id$='_hidQuickFileURL']").val(url);
+                        break;
+
+                    case 'Quick Form Chinese':
+                        $("[id$='_hidQuickFileURLCN']").val(url);
+                        break;
+
+                    case 'Gear Change':
+                        $("[id$='_hidGearFileURL']").val(url);
+                        break;
+
+                    case 'Jockey Weight':
+                        $("[id$='_hidJockeyFileURL']").val(url);
+                        break;
+
+                    case 'Horse Weight':
+                        $("[id$='_hidHorseFileURL']").val(url);
+                        break;
+
+                    case 'Change of Colours':
+                        $("[id$='_hidColourFileURL']").val(url);
+                        break;
+
+                    case 'JockeySilk':
+                        $("[id$='_hidJockeySilkFileURL']").val(url);
+                        break;
+                    //CR:60  
+                    case 'Track & Weather Report (English)':
+                        $("[id$='_hidWeatherReportURL']").val(url);
+                        break;
+                    case 'Track & Weather Report (Chinese)':
+                        $("[id$='_hidWeatherReportURLCN']").val(url);
+                        break;
+                    case 'Race Analysis (English)':
+                        $("[id$='_hidRaceAnalysisURL']").val(url);
+                        break;
+                    case 'Race Analysis (Chinese)':
+                        $("[id$='_hidRaceAnalysisURLCN']").val(url);
+                        break;
+                    case 'Media Selections (English)':
+                        $("[id$='_hidMediaSelectionsURL']").val(url);
+                        break;
+                    case 'Media Selections (Chinese)':
+                        $("[id$='_hidMediaSelectionsURLCN']").val(url);
+                        break;
+                    case 'Additional Info (English)':
+                        $("[id$='_hidAdditionalInfoURL']").val(url);
+                        break;
+                    case 'Additional Info (Chinese)':
+                        $("[id$='_hidAdditionalInfoURLCN']").val(url);
+                        break;
+                    case 'Gear Change (English)':
+                        $("[id$='_hidGearChangesURL']").val(url);
+                        break;
+                    case 'Gear Change (Chinese)':
+                        $("[id$='_hidGearChangesURLCN']").val(url);
+                        break;
+                    case 'Change Of Colours (English)':
+                        $("[id$='_hidChangeOfcoloursURL']").val(url);
+                        break;
+                    case 'Change Of Colours (Chinese)':
+                        $("[id$='_hidChangeOfcoloursURLCN']").val(url);
+                        break;
+                    case 'Horse Weights (English)':
+                        $("[id$='_hidHorseWeightsURL']").val(url);
+                        break;
+                    case 'Horse Weights (Chinese)':
+                        $("[id$='_hidHorseWeightsURLCN']").val(url);
+                        break;
+                    case 'Jockey Weights (English)':
+                        $("[id$='_hidJockeyWeightsURL']").val(url);
+                        break;
+                    case 'Jockey Weights (Chinese)':
+                        $("[id$='_hidJockeyWeightsURLCN']").val(url);
+                        break;
+                    case 'Trainers Entries (English)':
+                        $("[id$='_hidTrainersEntriesURL']").val(url);
+                        break;
+                    case 'Trainers Entries (Chinese)':
+                        $("[id$='_hidTrainersEntriesURLCN']").val(url);
+                        break;
+                    case 'Jockey Riders (English)':
+                        $("[id$='_hidJockeyRidersURL']").val(url);
+                        break;
+                    case 'Jockey Riders (Chinese)':
+                        $("[id$='_hidJockeyRidersURLCN']").val(url);
+                        break;
+                    case 'Form Guide (English)':
+                        $("[id$='_hidFormGuideURL']").val(url);
+                        break;
+                    case 'Form Guide (Chinese)':
+                        $("[id$='_hidFormGuideURLCN']").val(url);
+                        break;
+                    case 'Race Comparison (English)':
+                        $("[id$='_hidRaceComparisonURL']").val(url);
+                        break;
+                    case 'Race Comparison (Chinese)':
+                        $("[id$='_hidRaceComparisonURLCN']").val(url);
+                        break;
+                    //End 
+                }
+
+                __doPostBack();
+            }
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function removeUploadedFile(type, file) {
+    var options = {
+        title: 'Confirm Removing',
+        width: 400,
+        height: 135,
+        url: '/_layouts/15/STC_LAYOUTS/DeleteConfirmationDialog.aspx?item=' + file,
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Removing...', 'Please wait while the ' + file + ' is being deleted.', 80, 300);
+                $("[id$='__EVENTTARGET']").val(type);
+                __doPostBack();
+            }
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+//wp_PublishRaceCard & wp_EditPublishRaceCard----------------------------------------------------------------------------
+
+
+//wp_ManageRaceCard------------------------------------------------------------------------------------------------------
+function deleteRaceCard(meetingID, status) {
+    var options = {
+        title: 'Confirm Delete',
+        width: 500,
+        height: 165,
+        url: '/_layouts/15/STC_Layouts/DeleteConfirmationDialog.aspx?item=Race Card',
+        allowMaximize: false,
+        showClose: true,
+        dialogReturnValueCallback: function (result) {
+            if (result == SP.UI.DialogResult.OK) {
+                showWaitScreen('Deleting...', 'Please wait while the Race Card is being deleted.', 80, 300);
+                $("[id$='_hidDeleteID']").val(meetingID);
+                $("[id$='_hidStatus']").val(status);
+                __doPostBack();
+            }
+        }
+    };
+    SP.SOD.execute('sp.ui.dialog.js', 'SP.UI.ModalDialog.showModalDialog', options);
+}
+//wp_ManageRaceCard------------------------------------------------------------------------------------------------------
+
+//AddOverseaRace.aspx ---------------------------------------------------------------------------------------------------
+function addReferenceURL_AppPage() {
+    var url = $("[id$='_txtReferenceURL']").val();
+
+    var frame = document.createElement('iframe');
+    frame.setAttribute('src', url);
+    frame.setAttribute('width', '99%');
+    frame.setAttribute('height', '99%');
+
+    var options = {
+        title: 'Reference URL',
+        html: frame,
+        width: 800,
+        height: 600,
+        allowMaximize: true,
+        showClose: true,
+        dialogReturnValueCallback: function (result) {
+        }
+    };
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+function addReferenceURLCN_AppPage() {
+  var url = $("[id$='_txtReferenceURLCN']").val();
+
+  var frame = document.createElement('iframe');
+  frame.setAttribute('src', url);
+  frame.setAttribute('width', '99%');
+  frame.setAttribute('height', '99%');
+
+  var options = {
+    title: 'Reference URL',
+    html: frame,
+    width: 800,
+    height: 600,
+    allowMaximize: true,
+    showClose: true,
+    dialogReturnValueCallback: function (result) {
+    }
+  };
+  SP.UI.ModalDialog.showModalDialog(options);
+}
+function closeAddOverseaRaceDialog() {
+    SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.cancel, $("[id$='_hidSaved']").val());
+}
+//AddOverseaRace.aspx ---------------------------------------------------------------------------------------------------
+
+//wp_ViewRaceCard -------------------------------------------------------------------------------------------------------
+$(function () {
+    $("#divStarterList").hide();
+});
+
+function btnStarterListClick() {
+    $("#divStarterList").css('visibility', 'visible');
+    $("#divStarterList").show();
+}
+
+function btnSaveStarterListClick() {
+    $("[id$='_hidSave']").val(1);
+}
+
+function btnDefaultStarterListClick() {
+    $("[id$='_hidDefault']").val(1);
+}
+//wp_ViewRaceCard -------------------------------------------------------------------------------------------------------
+
+//wp_PublishOverseaRaceCardXml-------------------------------------------------------------------------------------------------------
+function hlnkTestUrl(link) {
+    var commonID = link.id + "";
+    var textBoxValue = $("[id$='_txtRefUrl" + commonID + "']").val();
+    var getStartValue = textBoxValue.substr(0, 7).toLowerCase();
+    var getStartValue2 = textBoxValue.substr(0, 4).toLowerCase();
+    if (getStartValue == "http://" && textBoxValue.length > 7) {
+        window.open(textBoxValue);
+    }
+    else if (getStartValue2 == "www." && textBoxValue.length > 4) {
+        window.open("http://" + textBoxValue);
+    }
+    return false;
+}
+//wp_PublishOverseaRaceCardXml -------------------------------------------------------------------------------------------------------
